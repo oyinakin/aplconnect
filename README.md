@@ -1,2 +1,2 @@
 # aplconnect
-A web application to allow employee manage daily tasks and messaging
+A web application to allow employees manage daily tasks and messaging
