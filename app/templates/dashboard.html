@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name ="viewport" content = "width = device-width, initial-scale = 1">
+        <title>Dashboard | APL Connect Ltd</title>
+        <meta name="description" content="">
+		<link href ="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet" type ="text/css">
+        <link href ="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type ="text/css">
+        <link href ="https://fonts.googleapis.com/css?family=Fjalla One" rel="stylesheet" type ="text/css">
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="../static/css/style.css">
+        <link rel="icon" href="../static/images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-
+AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+ <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<style>
+	#back-btn{
+			display:none
+		}
+	.media{
+		display: flex;
+	}
+	.media a{
+		padding-right: 10px;
+	}
+	.avatar {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+	}
+	#ui-id-1{
+		z-index:9999;
+	}
+	#table-messages, #table-tasks{
+		width:100%;
+		}
+		
+	body{
+	overflow-x: hidden;
+	}
+	.panel-wrapper{
+		font-family: Arial
+	}
+	.panel-head h3 {
+    		background-color: #020bc2;
+    		max-width: fit-content;
+    		color: #fff;
+	}
+	.panel-head{
+    		border-bottom: 2px solid #020bc2;
+    	}
+	thead{
+		background-color: #020cb2;
+	        color: #fff;
+		
+	}
+	
+	th,tr,td,thead,tbody{
+		font-size:14px;
+		font-family:Arial;
+		padding: 0.7%;
+		border-color: #fff;
+		border-style: solid;
+		border-width: 1px;
+		margin:1.5%;
+		width:max-content !important;
+			
+	}
+	.sidebar {
+		float: left;
+		width: 23%;
+		background-color: #020cb2;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		height:100%;		
+		box-shadow: 1px 0px 10px #777;
+		z-index:5;
+	}
+	
+	.header{
+	z-index:4;
+	background-color: #e9ecef;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	box-shadow: 0px 1px 10px #777;
+    /*height:5%;*/
+	}
+	.main-content
+	{
+		width:75%;
+		margin-left:23%;
+		margin-top:5%;
+	}
+	
+	#status-alert{
+		display:none;
+	}
+	.lds-dual-ring.hidden {
+		display: none;
+	}
+	.lds-dual-ring {
+		display: inline-block;
+		width: 100%;
+		height: 100vh;
+		background: url(../static/images/ajax-loader.gif)
+              50% 50%
+              no-repeat;
+		z-index :9999;
+	}
+	.overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,.8) url(../static/images/ajax-loader.gif)
+		50% 50%
+		no-repeat   ;
+		z-index: 999;
+		opacity: 1;
+	}
+	.logo img{
+		transform:translateY(0px);
+		opacity: 0.95;
+		transition:all ease-in-out 0.5s;
+	}
+	.logo:hover img{
+		transform:translateY(-10px);
+		opacity:1;
+		transition:all ease-in-out 0.5s;
+	}
+	
+	li.nav-item {
+		border-bottom: 2px solid #fff;
+		display:flex;
+	}
+	li.nav-item .nav-link{
+		color: #fff;
+		font-size:20px;
+		font-family:'Nunito';
+		text-decoration:uppercase;
+		text-align:left;
+		border:none
+	}
+	li.nav-item i{
+		color: #fff;
+		font-size:20px;
+	}
+	li.active button.active, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active li.active i{
+	  color:#fff !important;
+	  background-color: transparent !important;
+	  border:none !important;
+	}
+	
+	li.active {
+    background-color: #7dd4f1;
+    }
+	li:hover {
+    background-color: #fff;
+    }
+	li:hover .nav-link, li:hover i, li.active:hover .nav-link{
+		color: #020cb2 !important;
+		border:none;
+		transform:scale(1);
+    }
+	.welcome-text{
+		color:#fff;
+		font-size:18px;
+		font-family:'Nunito';
+		text-align:center;
+	}
+	.img-thumbnail{
+		max-width: 45% !important;
+	}
+	#img-gallery{
+		display:none;
+	}
+	#video-tag{
+		border: 1px solid #eee;
+    		max-width: 100%;
+    		
+	}
+	@media (min-width: 768px){
+		.navbar-toggler{
+		display:none;
+		}
+		.navbar-expand-md .navbar-collapse {
+			display: block !important;
+		}
+		.navbar-collapse {
+			display: block !important;
+		}
+		
+	}
+	@media (max-width: 768px){
+		#back-btn{
+			display:inline
+		}
+		.flex-column{
+			flex-direction: inherit !important;
+		}
+		#table-messages, #table-tasks, #table-stats{
+			width:max-content;
+		}
+		.navbar-toggler{
+			display:block;
+		}
+		.sidebar {
+			width: 75%;
+			background-color: #020cb2;
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			box-shadow: 1px 0px 10px #777;
+		}
+		.nav-item {
+			background-color: transparent;
+			margin-left: 0% !important;
+			width: 100% !important; 
+		}
+		.main-content{
+			width: 100%;
+			margin-top: 15%;
+			margin-left: 0%
+		}
+		.main .view .viewHeader {
+			width: 100%;
+			height: auto;
+			line-height: 45px;
+			padding: 0px;
+		}
+		.main .content {
+			position: relative;
+			left: 0px;
+			/*top: 0px;*/
+			right: 0px;
+			bottom: 0px;
+			/*padding: 5px 10px;*/
+		}
+	}
+	@media (min-width: 576px){
+		#messageModal {
+			max-width: 700px important;
+		}
+	}
+	</style>
+	
+   
+</head>
+<body>
+<!-- Log In Section Start -->
+<section class="">
+	
+	<div class="nav-btn">Menu</div>
+	<div class="">
+		<div class="col-sm-12 pt-3 pb-2 px-2 header">
+			<div style=" float: right;" class="col-sm-3">
+			    <button type="button" id= "back-btn" style="background-color: #020cb2" class="btn position-relative">
+				  <i class="text-white  fas fa-angle-double-left fa-1x"></i>
+				</button>
+				&nbsp;&nbsp;
+				<button type="button" class="btn btn-primary position-relative" onclick="topicon_click('#messages')">
+				  <i class="text-white  fas fa-envelope fa-1x"></i>
+				  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+					{{ count_unread }}
+					<span class="visually-hidden">unread message(s)</span>
+				  </span>
+				</button>
+				&nbsp;&nbsp;
+			  <button type="button" class="btn btn-danger position-relative" onclick="topicon_click('#tasks'); return false ">
+				  <i class="text-white  fas fa-tasks fa-1x"></i>
+				  	{% if user.user_type == 4 %}
+						<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+						{{ stats.0}}
+						<span class="visually-hidden">unread messages</span>
+						</span>
+					{% endif %}
+					
+					{% if user.user_type == 3 %}
+						<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+						{{ stats.2}}
+						<span class="visually-hidden">unread messages</span>
+						</span>
+					{% endif %}
+				</button>
+				&nbsp;&nbsp;
+				<button type="button" class="btn btn-warning position-relative" onclick="topicon_click('#tasks'); return false ">
+				  <i class="text-white  fas fa-tasks fa-1x"></i>
+				  {% if user.user_type == 4 %}
+						<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+						{{ stats.1}}
+						<span class="visually-hidden">unread messages</span>
+						</span>
+					{% endif %}
+					
+					{% if user.user_type == 3 %}
+						<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+						{{ stats.3}}
+						<span class="visually-hidden">unread messages</span>
+						</span>
+					{% endif %}
+				</button>
+				&nbsp;&nbsp;
+							
+				
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="false" style="float:right" aria-controls="collapsibleNavbar">
+					<span class="navbar-toggler-icon ">
+						<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path>
+						</svg>
+					</span>
+				</button>
+			</div>
+			
+			
+			
+		</div>
+		<div class="sidebar collapse navbar-collapse " id="collapsibleNavbar">
+			<nav class="py-5 text-center navbar-expand-md">
+				<a href="#" class="logo p-5 "><img src="../static/images/apl-logo-inverted.png"></a>
+				<h3 class="welcome-text">Welcome, <strong>{{user.first_name}}
+															{% if user.user_type == 1 %}
+															(Tenant)
+															{% elif user.user_type == 2 %}
+															(Contractor)
+															{% elif user.user_type == 3 %}
+															(Data Officer)
+															{% else %}
+															(Admin)
+															{% endif %}
+				
+													</strong>
+				</h3>
+				
+				<div  style="margin-top: 0vw">
+        			<ul class="my-5 nav  nav-tabs flex-column" id="myTab" role="tablist">
+						<li class="nav-item active p-2 " role="presentation">
+							<i class="fas fa-tachometer-alt my-auto"></i>
+							<button class='nav-link active my-auto' type="button" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard"  role="tab" aria-controls="dashboard" aria-selected="true">Dashboard</button>
+						</li>
+						{% if user.user_type == 3 or user.user_type == 4%}
+						<!-- <li class="nav-item p-2 " role="presentation">
+							<i class="fas fa-edit my-auto"></i>
+							<button class='nav-link my-auto' type="button"  id="users-tab" data-bs-toggle="tab" data-bs-target="#users"  role="tab" aria-controls="users" aria-selected="false">Users</button>
+						</li> -->
+						{% endif %}
+						{% if user.user_type == 2 or user.user_type == 3 or user.user_type == 4%}
+						<li class="nav-item p-2 " role="presentation">
+							<i class="fas fa-edit my-auto"></i>
+							<button class='nav-link my-auto' type="button"  id="tasks-tab" data-bs-toggle="tab" data-bs-target="#tasks"  role="tab" aria-controls="tasks" aria-selected="false">Task Manager</button>
+						</li>
+						{% endif %}
+						<!-- <li class="nav-item p-2 " role="presentation">
+							<i class="fas fa-tachometer-alt my-auto" ></i>
+							<button class='nav-link my-auto' type="button" id="requests-tab" data-bs-toggle="tab" data-bs-target="#requests"  role="tab" aria-controls="requests" aria-selected="false">Complaints/Issues</button>
+						</li> -->
+						<li class="nav-item p-2 " role="presentation">
+							<i class="fas fa-envelope my-auto"></i>
+							<button class='nav-link my-auto' type="button" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"  role="tab" aria-controls="messages" aria-selected="false">Messages</button>
+						</li>
+						<li class="nav-item p-2 ">
+							<i class="fas fa-sign-out-alt my-auto"></i>
+							<button class='nav-link my-auto' type="button" id="changepassword-tab" data-bs-toggle="tab" data-bs-target="#changepassword"  role="tab" aria-controls="changepassword" aria-selected="false">Change Password</button>
+						</li>
+						<li class="nav-item p-2 ">
+							<i class="fas fa-sign-out-alt my-auto"></i>
+							<a class='nav-link my-auto' href="signout">Log Out </a>
+						</li>
+					</ul>
+					
+					
+				</div>	
+			</nav>
+		</div>
+
+		<div class="main-content tab-content" id="myTabContent">
+		    <div class="mx-xs-0 mx-md-5 alert d-none" id= "alert-div" role="alert">
+			  <strong id= "alert-msg"></strong>
+			  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="clearAlert()"></button>
+			</div>
+			<div class="panel-wrapper tab-pane fade" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+				<div class="panel-head mx-xs-0 mx-md-5 ">
+					<div class="">
+						<h3 class="p-2 m-0">See What's Happening At A Glance</h3>
+					</div>
+				</div>
+				<div class="panel-body mx-xs-0 pt-2 mx-md-5">
+					<div class="row">
+						<div class="col-xl-4 col-sm-6 mb-3">
+						  <div class="card text-white bg-primary o-hidden h-100">
+							<div class="card-body">
+							  <div class="card-body-icon">
+								<i class="fa fa-fw fa-comments"></i>
+							  </div>
+							  <div class="mr-5">{{ count_unread }} New Message(s)!</div>
+							</div>
+							<a class="card-footer text-white clearfix small z-1" href="#" onclick="topicon_click('#messages'); return false ">
+							  <span class="float-left">View Details</span>
+							  <span class="float-right">
+								<i class="fa fa-angle-right"></i>
+							  </span>
+							</a>
+						  </div>
+						</div>
+						<div class="col-xl-4 col-sm-6 mb-3">
+						  <div class="card text-white bg-danger o-hidden h-100">
+							<div class="card-body">
+							  <div class="card-body-icon">
+								<i class="fa fa-fw fa-list"></i>
+							  </div>
+								{% if user.user_type == 4 %}
+										<div class="mr-5">{{stats.0}} New Tasks!</div>
+								{% endif %}
+								{% if user.user_type == 3 %}
+										<div class="mr-5">{{stats.2}} New Tasks!</div>
+								{% endif %}
+							  
+							</div>
+							<a class="card-footer text-white clearfix small z-1" href="#" onclick="topicon_click('#tasks'); return false ">
+							  <span class="float-left">View Details</span>
+							  <span class="float-right">
+								<i class="fa fa-angle-right"></i>
+							  </span>
+							</a>
+						  </div>
+						</div>
+						<div class="col-xl-4 col-sm-6 mb-3">
+          <div class="card text-white bg-warning o-hidden h-100">
+            <div class="card-body">
+              <div class="card-body-icon">
+                <i class="fa fa-fw fa-list"></i>
+              </div>
+                {% if user.user_type == 4 %}
+						<div class="mr-5">{{stats.1}} task(s)in Progress!</div>
+				{% endif %}
+				{% if user.user_type == 3 %}
+						<div class="mr-5">{{stats.3}} task(s) in Progress!</div>
+				{% endif %}
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#" onclick="topicon_click('#tasks'); return false ">
+              <span class="float-left">View Details</span>
+              <span class="float-right">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+					</div>
+					<div class="row pt-3">
+						<div class="panel-head mx-xs-0 mx-md-1 ">
+							<div class="">
+								<h3 class="m-0">Your Task Statistics</h3>
+							</div>
+						</div>
+						<div class="panel-body mx-xs-0 mx-md-2 ">
+							<div class="">
+								
+							</div>
+							<div class="list" style="overflow:scroll">
+								  <table id="table-stats" class = "table table-striped">
+									<thead>
+										<th class="bg-white"></th>
+										<th>Today</th>
+										<th>This Week</th>
+										<th>This Month</th>
+										
+									</thead>
+									<tbody id="tbody6" class="">
+									   {% if user.user_type == 4 %}
+										<tr  class= "">
+											<td class="bg-danger text-white">Pending</td>
+											<td>{{today_stats.0}}</td>
+											<td>{{weekly_stats.0}}</td>
+											<td>{{monthly_stats.0}}</td>
+											
+										</tr>
+										<tr  class= "" >
+											<td class="bg-warning">In Progress</td>
+											<td>{{today_stats.1}}</td>
+											<td>{{weekly_stats.1}}</td>
+											<td>{{monthly_stats.1}}</td>
+											
+										</tr>
+										<tr  class= "">
+											<td class="bg-success text-white">Completed</td>
+											<td>{{today_stats.2}}</td>
+											<td>{{weekly_stats.2}}</td>
+											<td>{{monthly_stats.2}}</td>
+											
+										</tr>
+										<tr  class= "">
+											<td class="bg-primary text-white">Total</td>
+											<td>{{today_stats.3}}</td>
+											<td>{{weekly_stats.3}}</td>
+											<td>{{monthly_stats.3}}</td>
+											
+										</tr>
+										{%  endif %}
+										{% if user.user_type == 3 %}
+										<tr  class= "">
+											<td class="bg-danger text-white">Pending</td>
+											<td>{{today_stats.4}}</td>
+											<td>{{weekly_stats.4}}</td>
+											<td>{{monthly_stats.0}}</td>
+											
+										</tr>
+										<tr  class= "" >
+											<td class="bg-warning">In Progress</td>
+											<td>{{today_stats.5}}</td>
+											<td>{{weekly_stats.5}}</td>
+											<td>{{monthly_stats.5}}</td>
+											
+										</tr>
+										<tr  class= "">
+											<td class="bg-success text-white">Completed</td>
+											<td>{{today_stats.6}}</td>
+											<td>{{weekly_stats.6}}</td>
+											<td>{{monthly_stats.6}}</td>
+											
+										</tr>
+										<tr  class= "">
+											<td class="bg-primary text-white">Total</td>
+											<td>{{today_stats.7}}</td>
+											<td>{{weekly_stats.7}}</td>
+											<td>{{monthly_stats.7}}</td>
+											
+										</tr>
+										{%  endif %}
+								  </tbody>
+								  </table>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% if user.user_type == 3 or user.user_type == 4 %}
+			<!-- <div class="panel-wrapper tab-pane fade" id="users" role="tabpanel" aria-labelledby="users-tab">
+				<div class="panel-head mx-xs-0 mx-md-5 ">
+					<div class="">
+						<h3 class="p-2 m-0">Create A New User</h3>
+					</div>	
+				</div>
+				<div class="panel-body">
+					<div class=" px-md-5">
+				   	<form class="validate-form row justify-content-start" method="post" id="log-in-form">
+					{% csrf_token %}
+					{% if error_message %}
+						<div class="alert alert-danger status-alert" role="alert" id="status-alert"><strong>{{ error_message }}</strong></div>
+					{% endif %}
+ 					<div class="row">
+					<div class="validate-input form-group col-sm-5 p-3">
+						{{newuserform.first_name}}
+					</div>
+
+					<div class="validate-input form-group col-sm-5 p-3">
+						{{newuserform.last_name}}
+					</div>
+					</div>
+					<div class="row">
+					<div class="validate-input form-group  col-sm-5 p-3">
+						{{newuserform.email}}
+					</div>
+					<div class="validate-input form-group col-sm-5 p-3">
+						{{newuserform.phone}}
+					</div>
+					</div>
+					<div class="row justify-content-start">
+					
+					<div class="validate-input  form-group col-sm-5 p-3">
+						<label for="{{ form.user_type.id_for_label }}">User Category</label>
+                                               {{newuserform.user_type}}
+					</div>
+					<div class="validate-input  form-group col-sm-5 p-3 " id = "building" >
+						<label for="{{ form.building.id_for_label }}">Building</label>
+                                               {{newuserform.building}}
+					</div>
+					</div>
+					<div class="row justify-content-start">
+					<div class="validate-input form-group col-sm-12 p-3">
+						<button type="submit" class="btn-blue  py-2 px-3 text-uppercase" id="btn-send">
+							Save
+						</button>
+					</div>
+					</div>
+					</form>
+				</div>
+				</div>
+				<div class= "row px-5">
+					<div class="px-3" style="overflow-x:auto; ">
+              					<table id="myTable2" class = "table table-striped w-100">
+                					<thead>
+                  <th onclick="sortTable(0,this)">S/N</th><th onclick="sortTable(1,this)">First Name</th><th onclick="sortTable(2,this)">Last Name</th><th onclick="sortTable(3,this)">Email</th><th onclick="sortTable(4)">Phone</th><th>User Category</th><th>Edit</th>
+                </thead>
+                <tbody id="tbody5">
+                   {% for User in staffuserview %}
+                    <tr>
+                      <td>{{forloop.counter}}</td><td>{{User.first_name}}</td><td>{{User.last_name}}</td><td>{{User.email}}</td><td>{{User.phone}}</td>
+			<td>
+				{% if User.user_type == 1 %}
+					Tenant
+				{% elif User.user_type == 2%}
+					Contractor
+				{% else %}
+					Data Officer
+				{% endif %}
+			</td>
+			<td><button type="button" class="editbtn"name="button" id={{User.id}} >Edit</button></td>
+                    </tr>
+                   {% endfor %}
+                </tbody>
+              </table>
+            </div>
+				</div>
+			</div>
+			 -->{% endif %}
+			<!-- <div class="panel-wrapper tab-pane fade" id="requests" role="tabpanel" aria-labelledby="requests-tab">
+				<div class="panel-head mx-xs-0 mx-md-5 ">
+					<div class="">
+						<h3 class="p-2 m-0">Create A New Issue</h3>
+					</div>	
+				</div>
+				<div class="panel-body">
+					<div class=" px-md-5">
+											<div class="page">
+					    <div class="main">
+							<div class="view">
+							  <div class="viewHeader">
+								  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addNewComplaint">
+									New Issue/Request</button>
+								  <div class="modal fade" id="addNewComplaint" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addNewComplaintLabel" aria-hidden="true">
+									  <div class="modal-dialog">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="addNewComplaintLabel">New Issue/Request</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											<div class="px-md-5">
+												<form class="validate-form row justify-content-start" method="post" id="log-in-form">
+												{% csrf_token %}
+												{% if error_message %}
+													<div class="alert alert-danger status-alert" role="alert" id="status-alert"><strong>{{ error_message }}</strong></div>
+												{% endif %}
+												
+												<div class="row justify-content-start">
+												<div class="validate-input  form-group p-3">
+													{{complaintsform.title}}
+												</div>
+												</div>
+												<div class="row justify-content-start">
+												<div class="validate-input  form-group p-3">
+													{{complaintsform.description}}
+												</div>
+												</div>
+												<hr>
+												<div class="row justify-content-start">
+													<div class="validate-input  form-group col-sm-12" style="line-height: 2">
+														Upload Pictures (Optional. Up to 5 pictures)
+														<input type="file" id="files" accept=".jpg,.jpeg,.png" name="files[]" multiple style="line-height: 1.5/>
+													</div>
+													<div id = "img-gallery" class="col-sm-12 py-3"></div>
+												</div>
+												<hr>
+												<div class="row justify-content-start">
+													<div class="validate-input  form-group col-sm-12 px-3" style="line-height: 2">
+														<video controls id="video-tag">
+														  <source id="video-source" src="splashVideo">
+														  Your browser does not support the video tag.
+														</video>
+														<input type="file" accept="video/*" id="videofile">
+														<br>
+														Upload Short Video (Optional. Max Size is 10MB)
+													
+													</div>
+												</div>
+												<hr>
+												{% if user.user_type == 3 or user.user_type == 4%}
+												<div class="row justify-content-start">
+												
+												<div class="validate-input  form-group p-3" style="line-height: 2">
+													Reported By																		   {{complaintsform.reportedby}}
+												</div>
+												</div>
+												{% endif %}
+												<div class="row justify-content-start">
+												<div class="validate-input form-group col-sm-12 p-3">
+													<button type="submit" class="btn-blue  py-2 px-3 text-uppercase" id="btn-send">
+														Save
+													</button>
+												</div>
+												</div>
+												</form>
+											</div>
+										  </div>
+										  
+										</div>
+									  </div>
+								  </div>
+								  								  
+								</div>
+							   </div>
+								  {% if user.user_type == 3 or user.user_type == 4%}
+								<div class= "row px-5">
+									<div class="px-3" style="overflow-x:auto; ">
+										<table id="table-complaints" class = "table table-striped w-100">
+											<thead>
+												<th>Title</th>
+												<th>Date Reported</th>
+												<th>Reported By</th>
+												<th>Assigned To</th>
+												<th>Status</th>
+												<th>Edit</th>
+											</thead>
+											<tbody id="tbody5">
+											   {% for complaint in allcomplaintsview %}
+												<tr onclick ="openComplaint">
+													<td>{{complaint.title}}</td>
+													<td>{{complaint.date_reported}}</td>
+													<td>{{complaint.user}}</td>
+													<td>{{complaint.assigned_to}}</td>
+													<td>{{complaint.status}}</td>
+													<td><button type="button" class="editbtn"name="button" id={{complaint.id}}>Edit</button></td>
+												</tr>
+											   {% endfor %}
+											</tbody>
+										</table>
+									</div>
+								</div>
+								{% endif %}
+								{% if user.user_type == 1 %}
+								<div class= "row px-5">
+									<div class="px-3" style="overflow-x:auto; ">
+										<table id="table-complaints" class = "table table-striped w-100">
+											<thead>
+												<th>Title</th>
+												<th>Date Reported</th>
+												<th>Reported By</th>
+												<th>Assigned To</th>
+												<th>Status</th>
+												<th>Edit</th>
+											</thead>
+											<tbody id="">
+											   {% for complaint in usercomplaintsview %}
+												<tr onclick ="openComplaint">
+													<td>{{complaint.title}}</td>
+													<td>{{complaint.date_reported}}</td>
+													<td>{{complaint.user}}</td>
+													<td>{{complaint.assigned_to}}</td>
+													<td>{{complaint.status}}</td>
+													<td><button type="button" class="editbtn"name="button" id={{complaint.id}} >Edit</button></td>
+												</tr>
+											   {% endfor %}
+											</tbody>
+										</table>
+									</div>
+								</div>
+								{% endif %}
+								{% if user.user_type == 2 %}
+								<div class= "row px-5">
+									<div class="px-3" style="overflow-x:auto; ">
+										<table id="table-complaints" class = "table table-striped w-100">
+											<thead>
+												<th>Title</th>
+												<th>Date Reported</th>
+												<th>Reported By</th>
+												<th>Assigned To</th>
+												<th>Status</th>
+												<th>Edit</th>
+											</thead>
+											<tbody id="tbody5">
+											   {% for complaint in contractorcomplaintsview %}
+												<tr onclick ="openComplaint">
+													<td>{{complaint.title}}</td>
+													<td>{{complaint.date_reported}}</td>
+													<td>{{complaint.user}}</td>
+													<td>{{complaint.assigned_to}}</td>
+													<td>{{complaint.status}}</td>
+													<td><button type="button" class="editbtn"name="button" id={{complaint.id}}>Edit</button></td>
+												</tr>
+											   {% endfor %}
+											</tbody>
+										</table>
+									</div>
+								</div>
+								{% endif %}
+							  </div>
+							</div>
+					</div>
+				</div>
+			</div>
+			 -->
+			 <div class="panel-wrapper tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+				{% if user.user_type == 3 or user.user_type == 4%}
+							{{ allusers|json_script:"user-list" }}
+				{% else %}
+						{{ supportuser|json_script:"user-list" }}
+				{% endif %}		
+				<div class="panel-head mx-xs-0 mx-md-5 ">
+					<div class="">
+						<h3 class="p-2 m-0">Messages</h3>
+					</div>	
+				</div>
+				<div class="panel-body">
+					<div class=" px-md-5">
+						<div class="page">
+					    <div class="main p-1">
+							<div class="view">
+							  <div class="viewHeader">
+								  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addNewMessage">
+									New</button>
+								  <div class="modal fade" id="addNewMessage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addNewMessageLabel" aria-hidden="true">
+									  <div class="modal-dialog">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="addNewMessageLabel">New Message</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											<div class="px-md-5">
+												<form class="row register-form"  id="MessageForm" name="MessageForm" method="post">
+													{% csrf_token %}
+													<div class="row justify-content-start">
+													<div class="validate-input ui-widget form-group p-3">
+														{{messageform.receiver.errors}}
+														{{messageform.receiver}}
+													</div>
+													</div>
+													<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul>
+													<div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
+													<div class="row justify-content-start">
+													<div class="validate-input  form-group p-3">
+														{{messageform.subject.errors}}
+														{{messageform.subject}}
+													</div>
+													</div>
+													<div class="row justify-content-start">
+													<div class="validate-input  form-group p-3">
+														{{messageform.body.errors}}
+														{{messageform.body}}
+													</div>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+														<button type="submit"  id="sendMessageBtn"  class="btn btn-primary" >Send</button>
+													</div>
+												</form>
+											</div>
+										  </div>
+										  
+										</div>
+									  </div>
+								  </div>
+								  <button type="button" data-filter=".received" class="btn btn-info">Inbox</button>
+								  <button type="button" data-filter=".sent" class="btn btn-success">Sent</button>
+                                  <button type="button" data-filter=".unread" class="btn btn-warning">Unread</button>
+								  <button type="button" data-filter=".read" class="btn btn-secondary">Read</button>
+								  
+								</div>
+							   </div>
+							  <div class="content">
+								<div class="list" data-ref="mixcontainer-messages" style="overflow:scroll">
+								  <table id="table-messages" class = "table table-striped">
+									<thead>
+										<th>Date Created</th>
+										<th>Title</th>
+										<th>Receiver/Sender</th>
+										<th>Status</th>
+									</thead>
+									<tbody id="tbody-messages">
+									{% for message in usermessages %}
+									{% if message.recent_reply_id != 0 %}
+									  {%for reply in all_replies %}
+									    {%if message.recent_reply_id == reply.id and reply.sender != request.user and message.seen.seen == 0 %}
+											<tr  class= "checked mix unread received" data-bs-messageid = "{{message.id}}" data-bs-toggle="modal" data-bs-target="#openMessage"  data-bs-messagetitle = "{{message.subject}}" style="font-weight:bolder">
+											<td>{{message.date_created}}</td>
+											<td>{{message.subject}}</td>
+											<td>{{message.sender}}</td>
+											<td class= "bg-warning" >Unread</td>
+											</tr>
+										{% elif  message.recent_reply_id == reply.id and reply.sender == request.user %}
+											<tr  class= "checked mix sent" data-bs-messageid = "{{message.id}}" data-bs-toggle="modal" data-bs-target="#openMessage"
+											data-bs-messagetitle = "{{message.subject}}">
+											<td>{{message.date_created}}</td>
+											<td>{{message.subject}}</td>
+											<td>{%for receiver in  message.receiver_list %}{{receiver}},{% endfor %}</td>
+											<td class= "bg-success text-white" >Sent</td>
+											</tr>
+											{% if user_details in message.receiver_list and message.seen.seen  == 1%}
+												<tr  class= "checked mix read received" data-bs-messageid = "{{message.id}}" data-bs-toggle="modal" data-bs-target="#openMessage" data-bs-messagetitle = "{{message.subject}}">
+												<td>{{message.date_created}}</td>
+												<td>{{message.subject}}</td>
+												<td>{{message.sender}}</td>
+												<td class= "bg-secondary text-white" >Read</td>
+												</tr>
+											{% endif%}	
+											{% if user_details in message.receiver_list and message.seen.seen  == 0%}
+												<tr  class= "checked mix unread received" data-bs-messageid = "{{message.id}}" data-bs-toggle="modal" data-bs-target="#openMessage"  data-bs-messagetitle = "{{message.subject}}" style="font-weight:bolder">
+												<td>{{message.date_created}}</td>
+												<td>{{message.subject}}</td>
+												<td>{{message.sender}}</td>
+												<td class= "bg-warning" >Unread</td>
+												</tr> 
+											{% endif%}	
+										{% elif message.recent_reply_id == reply.id and reply.sender != request.user and message.seen.seen  == 1%}
+											<tr  class= "checked mix read received" data-bs-messageid = "{{message.id}}" data-bs-toggle="modal" data-bs-target="#openMessage" data-bs-messagetitle = "{{message.subject}}">
+											<td>{{message.date_created}}</td>
+											<td>{{message.subject}}</td>
+											<td>{{message.sender}}</td>
+											<td class= "bg-secondary text-white" >Read</td>
+											</tr>	
+										   {% if message.recent_reply_id == reply.id and reply.sender != request.user and message.sender == request.user %}
+											<tr  class= "checked mix read sent" data-bs-messageid = "{{message.id}}" data-bs-toggle="modal" data-bs-target="#openMessage" data-bs-messagetitle = "{{message.subject}}">
+											<td>{{message.date_created}}</td>
+											<td>{{message.subject}}</td>
+											<td>{%for receiver in  message.receiver_list %}{{receiver}},{% endfor %}</td>
+											<td class= "bg-success text-white">Sent</td>
+											</tr>
+											{% endif%}
+										{% endif%}
+									  {% endfor%}
+									{% elif user_details in message.receiver_list and message.seen.seen == 0  %}
+									<tr  class= "checked mix unread received" data-bs-messageid = "{{message.id}}" data-bs-toggle="modal" data-bs-target="#openMessage"  data-bs-messagetitle = "{{message.subject}}" style="font-weight:bolder">
+									<td>{{message.date_created}}</td>
+									<td>{{message.subject}}</td>
+									<td>{{message.sender}}</td>
+									<td class= "bg-warning" >Unread</td>
+									</tr>  
+									{% elif user_details in message.receiver_list and message.seen.seen == 1%}
+									<tr  class= "checked mix read received" data-bs-messageid = "{{message.id}}" data-bs-toggle="modal" data-bs-target="#openMessage" data-bs-messagetitle = "{{message.subject}}">
+									<td>{{message.date_created}}</td>
+									<td>{{message.subject}}</td>
+									<td>{{message.sender}}</td>
+									<td class= "bg-secondary text-white" >Read</td>
+									</tr>
+									
+									{% elif user_details not in message.receiver_list %}
+									<tr  class= "checked mix sent" data-bs-messageid = "{{message.id}}" data-bs-toggle="modal" data-bs-target="#openMessage"
+									data-bs-messagetitle = "{{message.subject}}">
+									<td>{{message.date_created}}</td>
+									<td>{{message.subject}}</td>
+									<td>{%for receiver in  message.receiver_list %}{{receiver}},{% endfor %}</td>
+									<td class= "bg-success text-white" >Sent</td>
+									</tr>
+									{% else %}
+									{% endif %}
+									{% endfor %}
+									</tbody>
+								  </table>
+								</div>
+								<div class="mixitup-page-list"><!-- Pagination buttons will be generated here --></div>
+								
+								<div class="modal fade" id="openMessage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="openMessageLabel" aria-hidden="true">
+									  <div class="modal-dialog" id="messageModal" >
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="openMessageLabel"></h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											<div class=" px-md-5">
+											<div id='ajax-message-load'></div>
+											<div class="panel mb-3 "id="first-message" style="border: 1px solid #eee;">
+												<div class="panel-heading">
+													<div class="media">
+														<a class="pull-left" href="#">
+															<img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" class="img-circle avatar">
+														</a>
+														<div class="media-body">
+															<small class="media-heading message-sender"></small>
+															<h6 class="message-date" style="font-size: x-small;"></h6>
+														</div>
+													</div>
+												</div>
+												<hr style="margin:0 2px 0 2px">
+												<div class="panel-body">
+													<p class="message-body"></p>
+												</div>
+												<hr style="margin:0 2px 0 2px">
+											</div>
+											<form id="EditMessageForm" name="EditMessageForm" class="row register-form" method="post">
+												{% csrf_token %}
+												{% if error_message %}
+												<div class="alert alert-danger status-alert" role="alert" id="status-alert"><strong>{{ error_message }}</strong></div>
+												{% endif %}
+																							
+												<div class="row justify-content-start">
+												<div class="validate-input  form-group p-3">
+												<textarea name="reply_message_description" cols="40" rows="3" class="form-control p-2" placeholder="Reply Message" required="" id="id_reply_message_description" spellcheck="false"></textarea>
+												</div>
+												</div>
+												
+												<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+												<button type="submit" class="btn btn-primary" >Save</button>
+												</div>
+											</form>
+											</div>
+										  </div>
+										  
+										</div>
+									  </div>
+								  </div>
+							     </div> 
+							  </div>
+							</div>
+						  </div>
+						</div>
+					
+						
+					</div>
+							
+			
+			{% if user.user_type == 3 or user.user_type == 4%}
+			<div class="panel-wrapper tab-pane fade" id="tasks" role="tabpanel" aria-labelledby="tasks-tab">
+				<div class="panel-head mx-xs-0 mx-md-5 ">
+					<div class="">
+						<h3 class="p-2 m-0">Manage Tasks</h3>
+					</div>	
+				</div>
+			
+				<div class="panel-body">
+					<div class=" px-md-5">
+					<div class="page">
+					    <div class="main p-1">
+							<div class="view">
+							  <div class="viewHeader">
+								  {% if user.user_type == 4 or user.user_type == 5%}
+								  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addNewTask">
+									Add New Task</button>
+									{% endif %}
+								  <div class="modal fade" id="addNewTask" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addNewTaskLabel" aria-hidden="true">
+									  <div class="modal-dialog">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="addNewTaskLabel">New Task</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											<div class=" px-md-5">
+											<form id="TaskForm" name="TaskForm" class="row register-form" method="post">
+												{% csrf_token %}
+												{% if error_message %}
+												<div class="alert alert-danger status-alert" role="alert" id="status-alert"><strong>{{ error_message }}</strong></div>
+												{% endif %}
+												
+												<div class="row justify-content-start">
+												<div class="validate-input  form-group p-3">
+													{{taskform.task_title}}
+												</div>
+												</div>
+												<div class="row justify-content-start">
+												<div class="validate-input  form-group  p-3">
+													{{taskform.task_description}}
+												</div>
+												</div>
+												<div class="row justify-content-start">
+												<div class="validate-input  form-group p-3 ">
+													{{taskform.task_assigned_to}}
+												</div>
+												</div>
+												<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+												<button type="submit" class="btn btn-primary" >Save</button>
+												</div>
+											</form>
+											</div>
+										  </div>
+										  
+										</div>
+									  </div>
+								  </div>
+								  <button type="button" data-filter="all" class="btn btn-secondary">All</button>
+								  <button type="button" data-filter=".completed" class="btn btn-success text-white mixitup-control-active">Completed</button>
+								  <button type="button" data-filter=".in-progress" class="btn btn-warning">In Progress</button>
+                                  <button type="button" data-filter=".pending" class="btn btn-danger text-white">Pending</button>
+								</div>
+							</div>   
+							  <div class="content">
+								<div class="list" style="overflow:scroll">
+								  <table id="table-tasks" class = "table table-striped">
+									<thead>
+										<th>S/N</th>
+										<th>Title</th>
+										<th>Date Created</th>
+										<th>Assigned By</th>
+										<th>Assigned To</th>
+										<th>Status</th>
+										<!-- <th>Edit</th> -->
+									</thead>
+									<tbody id="tbody6" class="">
+									{% if user.user_type == 4 %}
+									{% for task in alltasksview %}
+									{% if task.status == 1%}
+									<tr  class= "checked mix pending" data-bs-taskid = "{{task.id}}" data-bs-toggle="modal" data-bs-target="#openTask">
+									<td>{{forloop.counter}}</td>
+									<td>{{task.title}}</td>
+									<td>{{task.date_assigned}}</td>
+									<td>{{task.assigned_by}}</td>
+									<td>{{task.assigned_to}}</td>
+									<td class= "bg-danger text-white" >Pending</td>
+									<!-- <td><button type="button" class="editbtn"name="button" id={{task.id}}>Edit</button></td> -->
+									</tr>
+									{% elif task.status == 2%}
+									<tr  class= "checked mix in-progress" data-bs-taskid = "{{task.id}}" data-bs-toggle="modal" data-bs-target="#openTask">
+									<td>{{forloop.counter}}</td>
+									<td>{{task.title}}</td>
+									<td>{{task.date_assigned}}</td>
+									<td>{{task.assigned_by}}</td>
+									<td>{{task.assigned_to}}</td>
+									<td class= "bg-warning " >In Progress</td>
+									<!-- <td><button type="button" class="editbtn"name="button" id={{task.id}} >Edit</button></td> -->
+									</tr>
+									{% elif task.status == 3%}
+									<tr  class= "checked mix completed" data-bs-taskid = "{{task.id}}" data-bs-toggle="modal" data-bs-target="#openTask">
+									<td>{{forloop.counter}}</td>
+									<td>{{task.title}}</td>
+									<td>{{task.date_assigned}}</td>
+									<td>{{task.assigned_by}}</td>
+									<td>{{task.assigned_to}}</td>
+									<td class= "bg-success text-white" >Completed</td>
+									<!-- <td><button type="button" class="editbtn"name="button" id={{task.id}} >Edit</button></td> -->
+									</tr>
+									{% elif task.status == 4%}
+									<tr  class= "checked mix closed" >
+									<td>{{forloop.counter}}</td>
+									<td>{{task.title}}</td>
+									<td>{{task.date_assigned}}</td>
+									<td>{{task.assigned_by}}</td>
+									<td>{{task.assigned_to}}</td>
+									<td class= "bg-danger" >Closed</td>
+									<!-- <td><button type="button" class="editbtn"name="button" id={{task.id}} >Edit</button></td> -->
+									</tr>
+									{% else %}
+									
+									{% endif %}
+									
+									{% endfor %}
+									{% endif %}
+									{% if user.user_type == 3 or user.user_type == 5 %}
+									{% for task in usertasksview %}
+									{% if task.status == 1%}
+									<tr  class= "checked mix pending" data-bs-taskid = "{{task.id}}" data-bs-toggle="modal" data-bs-target="#openTask">
+									<td>{{forloop.counter}}</td>
+									<td>{{task.title}}</td>
+									<td>{{task.date_assigned}}</td>
+									<td>{{task.assigned_by}}</td>
+									<td>{{task.assigned_to}}</td>
+									<td class= "bg-danger text-white" >Pending</td>
+									<!-- <td><button type="button" class="editbtn"name="button" id={{task.id}} >Edit</button></td> -->
+									</tr>
+									{% elif task.status == 2%}
+									<tr  class= "checked mix in-progress" data-bs-taskid = "{{task.id}}" data-bs-toggle="modal" data-bs-target="#openTask">
+									<td>{{forloop.counter}}</td>
+									<td>{{task.title}}</td>
+									<td>{{task.date_assigned}}</td>
+									<td>{{task.assigned_by}}</td>
+									<td>{{task.assigned_to}}</td>
+									<td class= "bg-warning" >In Progress</td>
+									<!-- <td><button type="button" class="editbtn"name="button" id={{task.id}} >Edit</button></td> -->
+									</tr>
+									{% elif task.status == 3%}
+									<tr  class= "checked mix completed" data-bs-taskid = "{{task.id}}" data-bs-toggle="modal" data-bs-target="#openTask">
+									<td>{{forloop.counter}}</td>
+									<td>{{task.title}}</td>
+									<td>{{task.date_assigned}}</td>
+									<td>{{task.assigned_by}}</td>
+									<td>{{task.assigned_to}}</td>
+									<td class= "bg-success text-white" >Completed</td>
+									<!-- <td><button type="button" class="editbtn"name="button" id={{task.id}} >Edit</button></td> -->
+									</tr>
+									{% elif task.status == 4%}
+									<tr  class= "checked mix closed" >
+									<td>{{forloop.counter}}</td>
+									<td>{{task.title}}</td>
+									<td>{{task.date_assigned}}</td>
+									<td>{{task.assigned_by}}</td>
+									<td>{{task.assigned_to}}</td>
+									<td class= "bg-danger" >Closed</td>
+									<!-- <td><button type="button" class="editbtn"name="button" id={{task.id}} >Edit</button></td> -->
+									</tr>
+									{% else %}
+									
+									{% endif %}
+									
+									{% endfor %}
+									{% endif %}
+								  </tbody>
+								  </table>
+								</div>
+								<div class="mixitup-page-list"><!-- Pagination buttons will be generated here --></div>
+								<div class="modal fade" id="openTask" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="openTaskLabel" aria-hidden="true">
+									  <div class="modal-dialog">
+										<div class="modal-content">
+										  <div class="modal-header">
+											<h5 class="modal-title" id="openTaskLabel">Edit Task</h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										  </div>
+										  <div class="modal-body">
+											<div class=" px-md-5">
+											<form id="EditTaskForm" name="EditTaskForm" class="row register-form" method="post">
+												{% csrf_token %}
+												{% if error_message %}
+												<div class="alert alert-danger status-alert" role="alert" id="status-alert"><strong>{{ error_message }}</strong></div>
+												{% endif %}
+												
+												<div class="row justify-content-start">
+												<div class="validate-input  form-group p-3">
+													<input type="text" name="edit_task_title" class="form-control p-2" id="id_edit_task_title" disabled="">
+													<input type="hidden" name="edit_task_id" class="form-control p-2" id="id_edit_task_id" disabled="">
+												</div>
+												</div>
+												<div class="row justify-content-start">
+												<div class="validate-input  form-group p-3">
+												<textarea name="edit_task_description" cols="40" rows="3" class="form-control p-2" disabled="" required="" id="id_edit_task_description" spellcheck="false"></textarea>
+												</div>
+												</div>
+												<div class="row justify-content-start">
+												<div class="validate-input  form-group p-3 ">
+													<select name="status" class="form-select" id="id_edit_task_status">
+														<option value="1">Pending</option>
+														<option value="2">In Progress</option>
+														<option value="3">Completed</option>
+														<option value="4">Closed</option>
+													</select>
+												</div>
+												</div>
+													
+													
+												<div class="row justify-content-start" id="appendElementBefore">
+												<div class="validate-input  form-group p-3">
+												<textarea name="new_comment" cols="40" rows="3" class="form-control p-2" id="id_new_comment" spellcheck="false" placeholder="Add a comment/message"></textarea>
+												</div>
+												</div>
+												<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+												<button type="submit" class="btn btn-primary" >Save</button>
+												</div>
+											</form>
+											</div>
+										  </div>
+										  
+										</div>
+									  </div>
+								  </div>
+							  </div>
+							</div>
+						  </div>
+						  </div>
+						</div>
+					</div>
+				
+			
+			{% endif %}
+			<div class="panel-wrapper tab-pane fade" id="changepassword" role="tabpanel" aria-labelledby="changepassword-tab">
+				<div class="panel-head mx-xs-0 mx-md-5 ">
+					<div class="">
+						<h3 class="p-2 m-0">Change Password</h3>
+					</div>	
+				</div>
+				<div class="panel-body">
+					<div class="  px-md-5 col-sm-6">
+						<form class="row register-form" method="post" id='changepasswordForm' name='changepasswordForm'>
+							{% csrf_token %}
+							{% if error_message %}
+								<div class="alert alert-danger status-alert" role="alert" id="status-alert"><strong>{{ error_message }}</strong></div>
+							{% endif %}
+										
+							<div class="row justify-content-start">
+							<div class="validate-input  form-group p-3">
+								{{cpwordform.oldpassword}}
+							</div>
+							</div>
+							<div class="row justify-content-start">
+							<div class="validate-input  form-group  p-3">
+								{{cpwordform.newpassword}}
+							</div>
+							</div>
+							<div class="row justify-content-start">
+							<div class="validate-input  form-group p-3 ">
+								{{cpwordform.confirmnewpassword}}
+							</div>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-primary" >Save</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	
+  
+</section>
+<button onclick="topfunction()" id="myBtn" title="Go to top"> <a href="#top" ><i class="fa fa-chevron-up"></i></a></button>
+<div id="loader" class="lds-dual-ring hidden overlay"></div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+<script src="../static/js/bundle.js"></script> 	
+<script src="../static/js/js.cookie.js"></script> 	
+
+<!-- <script src="../static/js/mixitup-pagination-master/dist/mixitup.min.js"></script>
+<script src="../static/js/mixitup-pagination-master/dist/mixitup-pagination.min.js"></script>
+ -->
+ <script>
+</script> 
+<script>
+/**var container_messages = document.querySelector('[data-ref="mixcontainer-messages"]');
+var container_tasks = document.querySelector('[data-ref="mixcontainer-tasks"]');
+
+
+var mixer1 = mixitup(container_messages,{
+	controls: {scope: 'local'},
+    pagination: {limit: 10}
+	});	
+mixer1.filter('.received')
+var mixer1 = mixitup(container_tasks,{
+	controls: {scope: 'local'},
+    pagination: {limit: 10}
+	});	
+**/
+</script> 
+<script>
+var link = ""
+link = window.location.hash
+if (link !== ""){
+	tabpanel = $(link);
+	$('.tab-pane').not(tabpanel).removeClass("show");
+	$('.tab-pane').not(tabpanel).removeClass("active"); 
+	tabpanel.addClass("active"); 
+	tabpanel.addClass("show"); 
+	$(".nav-item").each(function(index) {
+		tabid= $(this).find('button').attr("aria-controls");
+		if (link !== '#'+ tabid){
+			$(this).find('button').attr("aria-selected",false);
+		    $(this).removeClass("active");
+		    $(this).find('button').removeClass("active");
+		
+		}
+		else {
+		    $(this).addClass("active");
+		    $(this).find('button').addClass("active");
+		    $(this).find('button').attr("aria-selected",true);
+		    		
+		}
+	})
+}
+</script>     
+<script>
+  if (window.location.href === window.location.origin +"/"+"dashboard"){
+     window.location.href = window.location.origin +"/"+"dashboard#dashboard"
+	 tabpanel = $('#dashboard');
+	 $('.tab-pane').not(tabpanel).removeClass("active"); 
+	 $('.tab-pane').not(tabpanel).removeClass("show"); 
+	 tabpanel.addClass("active"); 
+	 tabpanel.addClass("show");
+   }
+  $(".nav-item").each(function(index) {
+    $(this).on("click", function(){
+	    $(this).addClass("active");
+		$(this).find('button').addClass("active");
+		$('.nav-item').not(this).removeClass("active");
+		$('.nav-item').not(this).find('button').removeClass("active");
+		$('.nav-item').not(this).find('button').attr("aria-selected",false);
+		$(this).find('button').attr("aria-selected",true);
+		tabid= $(this).find('button').attr("aria-controls");
+		tabidproper = '#'+ tabid;
+		tabpanel = $(tabidproper);
+		$('.tab-pane').not(tabpanel).removeClass("active"); 
+		$('.tab-pane').not(tabpanel).removeClass("show"); 
+		tabpanel.addClass("active"); 
+		tabpanel.addClass("show"); 
+		window.location.href = window.location.origin +"/"+"dashboard"+ tabidproper
+		var bkarray = Cookies.get("previousUrl")
+		if (bkarray !== undefined){
+			console.log(bkarray)
+			if(window.location.href.includes("#undefined")){
+			    Cookies.set("previousUrl", bkarray + "https://aplconnect.kr8tech.com/signin;")
+			}
+			else{
+				Cookies.set("previousUrl", bkarray+window.location.href+";")
+			}
+		}
+		else{
+			Cookies.set("previousUrl",window.location.href+";")
+		}
+
+        if ($(window).width() <= 768) {
+			  const menuToggle = document.getElementById('collapsibleNavbar')
+			  const bsCollapse = new bootstrap.Collapse(menuToggle)	
+			  $(this).on('click', () => { bsCollapse.toggle() })
+        }
+    });
+});
+
+function hideBuilding(){
+  	if (document.getElementById("id_user_type").value == 2){
+		document.getElementById("building").style.display = "none";
+	} 
+        else{
+		document.getElementById("building").style.display = "block";
+	}
+}
+</script>
+<script>
+    var total_size = 0
+				
+	$(document).ready(function() {
+		if(window.File && window.FileList && window.FileReader) {
+			$("#files").on("change",function(e) {
+				var total_no_of_files = document.getElementsByClassName('img-thumbnail')
+				console.log("Total files ")
+				console.log(total_no_of_files.length)
+				var files = e.target.files ,
+				filesLength = files.length ;
+				
+				if (total_no_of_files.length + filesLength > 5){
+					alert("You can only upload up to 5 pictures")
+					return
+					}
+				for (var i = 0; i < filesLength ; i++) {
+					total_size = total_size + files[i].size
+					var file_type = files[i].type;
+					console.log(file_type)
+					if (file_type.includes('image') == false){
+						alert("Only jpg/jpeg and png files are allowed!");
+						return
+					}   	
+					}	
+				if (total_size >  1024 * 1024 * 10){
+					alert("Total uploaded image(s) size should be less than 10MB")
+					return
+					}	
+				document.getElementById('img-gallery').style.display = "flex"	
+				for (var i = 0; i < filesLength ; i++) {
+					var f = files[i]
+					var fileReader = new FileReader();
+					fileReader.onload = (function(e) {
+						var file = e.target;
+						$("<div></div>",{class : "card img-thumbnail",}).appendTo('#img-gallery').append($("<img></img>",{class : 
+
+"card-img-top", src : e.target.result, title : file.name}))
+						
+						});
+					fileReader.readAsDataURL(f);
+					}
+				});
+			}
+		else { alert("Your browser doesn't support to File API") }
+});
+</script> 	
+<script> 	
+	var total_size = 0
+				
+	$(document).ready(function() {
+		if(window.File && window.FileList && window.FileReader) {
+			$("#videofile").on("change",function(e) {
+				const videoSrc = document.querySelector("#video-source");
+				const videoTag = document.querySelector("#video-tag");
+				const inputTag = document.querySelector("#videofile");
+				console.log(e.target.files)
+				if (e.target.files && e.target.files[0]) {
+					var reader = new FileReader();
+					reader.onload = function(event) {
+					  console.log('loaded')
+					  videoSrc.src = event.target.result
+					  videoTag.load()
+					}.bind(this)
+
+					reader.readAsDataURL(e.target.files[0]);
+				}
+			})
+			
+		}
+	});
+</script> 	
+<script>
+
+</script>     
+<!-- Log In Form  Section End -->
+</body>
+</html>

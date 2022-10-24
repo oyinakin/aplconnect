@@ -1,0 +1,3298 @@
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-11-15 23:09:53.539820) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Not Found: /favicon.ico
+TimeLog object (2)
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-11-15 23:12:50.707674) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+done dat
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-11-16 04:51:15.438887) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+done dat
+done dat
+done dat
+done dat
+done dat
+done dat
+done dat
+done dat
+done dat
+done dat
+done dat
+TimeLog object (3)
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-11-16 06:13:36.848869) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 216, in signout
+    log = TimeLog.objects.get(Q(user=request.user) & Q(date_of_log=date.today()))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1268, in build_filter
+    return self._add_q(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+del issue
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+TimeLog object (3)
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+TimeLog object (3)
+done dat
+done dat
+done dat
+done dat
+done dat
+done dat
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-11-17 07:14:22.929037) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Not Found: /.env
+Internal Server Error: /admin
+Traceback (most recent call last):
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/middleware/common.py", line 88, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to aplconnect.kr8tech.com/admin/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-11-19 15:33:18.265739) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: /robots.txt
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com:80'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com:443'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+TimeLog object (8)
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-11-25 20:03:10.007986) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /dup-installer/main.installer.php
+Not Found: /blog/
+Not Found: /wp/
+Not Found: /wordpress/
+Not Found: /new/
+Not Found: /old/
+Not Found: /test/
+Not Found: /main/
+Not Found: /site/
+Not Found: /backup/
+Not Found: /demo/
+Not Found: /home/
+Not Found: /tmp/
+Not Found: /cms/
+Not Found: /dev/
+Not Found: /old-wp/
+Not Found: /web/
+Not Found: /old-site/
+Not Found: /temp/
+Not Found: /2018/
+Not Found: /2019/
+Not Found: /bk/
+Not Found: /wp1/
+Not Found: /wp2/
+Not Found: /v1/
+Not Found: /v2/
+Not Found: /bak/
+Not Found: /install/
+Not Found: /2020/
+Not Found: /new-site/
+Not Found: /wp-includes/wlwmanifest.xml
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: /singin
+Not Found: /favicon.ico
+Forbidden (CSRF token missing or incorrect.): /signin
+apl@12345
+TimeLog object (12)
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+TimeLog object (12)
+TimeLog object (11)
+TimeLog object (12)
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+TimeLog object (11)
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-12-03 19:08:44.803699) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+TimeLog object (11)
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-12-03 20:43:57.674515) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 216, in signout
+    log = TimeLog.objects.get(Q(user=request.user) & Q(date_of_log=date.today()))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1268, in build_filter
+    return self._add_q(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+del issue
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField Task.date_completed received a naive datetime (2021-12-03 21:46:07.659963) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField Task.date_in_progress received a naive datetime (2021-12-03 21:46:14.165625) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+TimeLog object (12)
+Not Found: /sigin
+Internal Server Error: /edit_task
+Traceback (most recent call last):
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/whvteacx/aplconnect/app/views.py", line 279, in edit_task
+    task = Task.objects.get(id=data['task_id'])
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1350, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1196, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ''.
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField Task.date_completed received a naive datetime (2021-12-03 22:25:50.848248) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+TimeLog object (12)
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+TimeLog object (12)
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-12-03 23:24:26.847445) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+TimeLog object (11)
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+TimeLog object (13)
+Not Found: /wp-content/
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: /blog/
+Not Found: /wp/
+Not Found: /wordpress/
+Not Found: /new/
+Not Found: /old/
+Not Found: /test/
+Not Found: /main/
+Not Found: /site/
+Not Found: /backup/
+Not Found: /demo/
+Not Found: /home/
+Not Found: /tmp/
+Not Found: /cms/
+Not Found: /dev/
+Not Found: /old-wp/
+Not Found: /web/
+Not Found: /old-site/
+Not Found: /temp/
+Not Found: /2018/
+Not Found: /2019/
+Not Found: /bk/
+Not Found: /wp1/
+Not Found: /wp2/
+Not Found: /v1/
+Not Found: /v2/
+Not Found: /bak/
+Not Found: /install/
+Not Found: /2020/
+Not Found: /new-site/
+Not Found: /license.txt
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField Task.date_completed received a naive datetime (2021-12-07 11:54:39.115800) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Not Found: /wp-content/
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: /wp-login.php
+Not Found: /wordpress/wp-login.php
+Not Found: /blog/wp-login.php
+Not Found: /_ignition/execute-solution
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2021-12-08 09:02:52.945679) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: /.env
+Not Found: /_ignition/execute-solution
+Not Found: /.env
+Not Found: /.env
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: /.env
+Not Found: /wp-admin/css/
+Not Found: /.well-known/
+Not Found: /sites/default/files/
+Not Found: /uploads/
+Not Found: /images/
+Not Found: /files/
+Not Found: /wp-content/
+Not Found: /.env
+Not Found: /_profiler/phpinfo
+Not Found: /phpinfo.php
+Not Found: /phpinfo
+Not Found: /aws.yml
+Not Found: /.env
+Not Found: /.env.bak
+Not Found: /info.php
+Not Found: /laravel/.env
+Not Found: /local/.env
+Not Found: /backend/.env
+Not Found: /vendor/laravel/.env
+Not Found: /storage/.env
+Not Found: /protected/.env
+Not Found: /database/.env
+Not Found: /public/.env
+Not Found: /app/config/.env
+Not Found: /.aws/credentials
+Not Found: /config/aws.yml
+Not Found: /config.js
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+OSError: LSAPI: Socket read/write error
+Not Found: /_ignition/execute-solution
+Not Found: /.env
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /.env
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /robots.txt
+Not Found: /.env
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /blog/
+Not Found: /wp/
+Not Found: /wordpress/
+Not Found: /new/
+Not Found: /old/
+Not Found: /test/
+Not Found: /main/
+Not Found: /site/
+Not Found: /backup/
+Not Found: /demo/
+Not Found: /home/
+Not Found: /tmp/
+Not Found: /cms/
+Not Found: /dev/
+Not Found: /old-wp/
+Not Found: /web/
+Not Found: /old-site/
+Not Found: /temp/
+Not Found: /2018/
+Not Found: /2019/
+Not Found: /bk/
+Not Found: /wp1/
+Not Found: /wp2/
+Not Found: /v1/
+Not Found: /v2/
+Not Found: /bak/
+Not Found: /install/
+Not Found: /2020/
+Not Found: /new-site/
+Not Found: /.env
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: //.env
+Not Found: //vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /wp-login.php
+Not Found: /wp/wp-login.php
+Not Found: /.env
+Not Found: /.env
+Forbidden (CSRF token missing or incorrect.): /signin
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Forbidden (CSRF token missing or incorrect.): /signin
+Forbidden (CSRF token missing or incorrect.): /signin
+Not Found: /favicon.ico
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Not Found: /.env
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /installer.php
+Not Found: /ALFA_DATA/alfacgiapi/perl.alfa
+Not Found: /alfacgiapi/perl.alfa
+Not Found: /ALFA_DATA/alfacgiapi/perl.alfa
+Not Found: /alfacgiapi/perl.alfa
+Not Found: /wp-content/ALFA_DATA/alfacgiapi/perl.alfa
+Not Found: /wp-content/alfacgiapi/perl.alfa
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /.env
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /ALFA_DATA/alfacgiapi/perl.alfa
+Not Found: /alfacgiapi/perl.alfa
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /ALFA_DATA/alfacgiapi/perl.alfa
+Not Found: /alfacgiapi/perl.alfa
+Not Found: /wp-content/ALFA_DATA/alfacgiapi/perl.alfa
+Not Found: /wp-content/alfacgiapi/perl.alfa
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /favicon.ico
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /.env
+Not Found: /vendor/.env
+Not Found: /storage/.env
+Not Found: /public/.env
+Not Found: /info.php
+Not Found: /phpinfo.php
+Not Found: /info
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2018/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //media/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+OSError: LSAPI: Socket read/write error
+Not Found: /about-us
+Not Found: /about-us
+Not Found: /about-us
+Not Found: /portfolio
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /.env
+Not Found: /wp-content/
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /.env
+Not Found: /uploads/up.php
+Not Found: /sites/all/libraries/elfinder/elfinder.php.html
+Not Found: /images/vuln.php
+Not Found: /ups.php
+Not Found: /up.php
+Not Found: /wp-content/upload.php
+Not Found: /media-admin.php
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /1index.php
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+TimeLog object (22)
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /robots.txt
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /.env
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /.env
+Not Found: /.env
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /wordpress
+Not Found: /wp
+Not Found: /bc
+Not Found: /bk
+Not Found: /backup
+Not Found: /old
+Not Found: /new
+Not Found: /main
+Not Found: /home
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /wp-load.php
+Not Found: /style.php
+Not Found: /wp-admin/style.php
+Not Found: /s_e.php
+Not Found: /s_ne.php
+Not Found: /1index.php
+Not Found: /3index.php
+Not Found: /wikindex.php
+Not Found: /wp-content/mu-plugins-old/index.php
+Not Found: /radio.php
+Not Found: /lock360.php
+Not Found: /wp-load.php
+Not Found: /old-index.php
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /xmrlpc.php
+Not Found: /xmlrpcs.php
+Not Found: /wp-admin.php
+Not Found: /qindex.php
+Not Found: /doc.php
+Not Found: /wp_wrong_datlib.php
+Not Found: /beence.php
+Not Found: /ups.php
+Not Found: /wp-signin.php
+Not Found: /media-admin.php
+Not Found: /export.php
+Not Found: /wp-content/export.php
+Not Found: /wp-includes/wp-class.php
+Not Found: /wp-includes/wp-atom.php
+Not Found: /wp-includes/images/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /defau1t.php
+Not Found: /css.php
+Not Found: /moduless.php
+Not Found: /wp-booking.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /config.bak.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /legion.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /wp-plugins.php
+Not Found: /gank.php.PhP
+Not Found: /wp-content/db-cache.php
+Not Found: /archives.php
+Not Found: /xindex.php
+Not Found: /defau11.php
+Not Found: /wp-content/outcms.php
+Not Found: /system_log.php
+Not Found: /wp-backup-sql-302.php
+Not Found: /error.php
+Not Found: /ALFA_DATA
+Not Found: /alfacgiapi
+Not Found: /cgialfa
+Not Found: /.well-known/ALFA_DATA
+Not Found: /.well-known/alfacgiapi
+Not Found: /.well-known/cgialfa
+Not Found: /wp-content/uploads/ALFA_DATA
+Not Found: /wp-content/uploads/alfacgiapi
+Not Found: /wp-content/uploads/cgialfa
+Not Found: /wp-includes/ALFA_DATA
+Not Found: /wp-includes/alfacgiapi
+Not Found: /wp-includes/cgialfa
+Not Found: /wp-admin/ALFA_DATA
+Not Found: /wp-admin/alfacgiapi
+Not Found: /wp-admin/cgialfa
+Not Found: /wp-content/ALFA_DATA
+Not Found: /wp-content/alfacgiapi
+Not Found: /wp-content/cgialfa
+Not Found: /templates/beez3/ALFA_DATA
+Not Found: /templates/beez3/alfacgiapi
+Not Found: /templates/beez3/cgialfa
+Not Found: /sites/default/files/ALFA_DATA
+Not Found: /sites/default/files/alfacgiapi
+Not Found: /sites/default/files/cgialfa
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /index.php
+Not Found: /about.php
+Not Found: /shells.php
+Not Found: /olux.php
+Not Found: /xleet.php
+Not Found: /wso.php
+Not Found: /shell.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /1.php
+Not Found: /x.php
+Not Found: /z.php
+Not Found: /a.php
+Not Found: /test.php
+Not Found: /wp.php
+Not Found: /alfa.php
+Not Found: /config.php
+Not Found: /templates/beez3/index.php
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //xmlrpc.php
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2020/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /wp-admin/install.php
+Not Found: /wp/wp-admin/install.php
+Not Found: /new/wp-admin/install.php
+Not Found: /old/wp-admin/install.php
+Not Found: /wordpress/wp-admin/install.php
+Not Found: /test/wp-admin/install.php
+Not Found: /blog/wp-admin/install.php
+Not Found: /cms/wp-admin/install.php
+Not Found: /web/wp-admin/install.php
+Not Found: /backup/wp-admin/install.php
+Not Found: /site/wp-admin/install.php
+Not Found: /oldsite/wp-admin/install.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /.env
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /.env
+Not Found: /wordpress
+Not Found: /wp
+Not Found: /bc
+Not Found: /bk
+Not Found: /backup
+Not Found: /old
+Not Found: /new
+Not Found: /main
+Not Found: /home
+Not Found: /wordpress/wp-admin/install.php
+Not Found: /installer.php
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /.env
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /robots.txt
+Not Found: /.DS_Store
+Not Found: /.DS_Store
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /.DS_Store
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /.DS_Store
+Not Found: /.env
+Not Found: /robots.txt
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /robots.txt
+Not Found: /test_404_page/
+Not Found: /.env
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /administrator/index.php
+Not Found: /administrator/index.php
+Not Found: /administrator/index.php
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /wp-admin/install.php
+Not Found: /wp/wp-admin/install.php
+Not Found: /new/wp-admin/install.php
+Not Found: /old/wp-admin/install.php
+Not Found: /wordpress/wp-admin/install.php
+Not Found: /test/wp-admin/install.php
+Not Found: /blog/wp-admin/install.php
+Not Found: /cms/wp-admin/install.php
+Not Found: /web/wp-admin/install.php
+Not Found: /backup/wp-admin/install.php
+Not Found: /site/wp-admin/install.php
+Not Found: /oldsite/wp-admin/install.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //xmlrpc.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Bad Request: /
+Not Found: /.env
+Not Found: /1index.php
+Not Found: /11index.php
+Not Found: /2index.php
+Not Found: /3index.php
+Not Found: /ups.php
+Not Found: /111nocache.php
+Not Found: /utchiha.php
+Not Found: /sites/all/libraries/elfinder/elfinder.php.html
+Not Found: /wp-admin/setup-config.php
+Not Found: /unix.php
+Not Found: /small.php
+Not Found: /demo328/fw.php
+Not Found: /radio.php
+Not Found: /media-admin.php
+Not Found: /uploads/up.php
+Not Found: /wp_wrong_datlib.php
+Not Found: /wp-admin/includes/class-wp-media-list-data.php
+Not Found: /xleet.php
+Not Found: /0byte.php
+Not Found: /wp-content/fw.php
+Not Found: /autoload_classmap.php
+Not Found: /wso.php
+Not Found: /shell.php
+Not Found: /doc.php
+Not Found: /stindex.php
+Not Found: /alwso.php
+Not Found: /fx.php
+Not Found: /sym.php
+Not Found: /sym403.php
+Not Found: /DKIZ.php
+Not Found: /fw.php
+Not Found: /xl.php
+Not Found: /symlink.php
+Not Found: /old-index.php
+Not Found: /shx.php
+Not Found: /alfa.php
+Not Found: /mini.php
+Not Found: /wikindex.php
+Not Found: /xindex.php
+Not Found: /kindex.php
+Not Found: /wp.php
+Not Found: /sindex.php
+Not Found: /baindex.php
+Not Found: /new-index.php
+Not Found: /qindex.php
+Not Found: /404.php
+Not Found: /403.php
+Not Found: /up.php
+Not Found: /c99.php
+Not Found: /xxx.php
+Not Found: /ok.php
+Not Found: /0.php
+Not Found: /x.php
+Not Found: /xx.php
+Not Found: /1.php
+Not Found: /2.php
+Not Found: /3.php
+Not Found: /4.php
+Not Found: /5.php
+Not Found: /6.php
+Not Found: /7.php
+Not Found: /8.php
+Not Found: /9.php
+Not Found: /10.php
+Not Found: /a.php
+Not Found: /z.php
+Not Found: /e.php
+Not Found: /r.php
+Not Found: /t.php
+Not Found: /y.php
+Not Found: /u.php
+Not Found: /i.php
+Not Found: /o.php
+Not Found: /p.php
+Not Found: /q.php
+Not Found: /s.php
+Not Found: /d.php
+Not Found: /f.php
+Not Found: /g.php
+Not Found: /h.php
+Not Found: /j.php
+Not Found: /k.php
+Not Found: /l.php
+Not Found: /m.php
+Not Found: /w.php
+Not Found: /v.php
+Not Found: /n.php
+Not Found: /b.php
+Not Found: /c.php
+Not Found: /data.php
+Not Found: /wp-blog.php
+Not Found: /FoxWSO.php
+Not Found: /edit-form.php
+Not Found: /wp-wso.php
+Not Found: /priv8.php
+Not Found: /minimo.php
+Not Found: /V3.php
+Not Found: /V5.php
+Not Found: /www.php
+Not Found: /100.php
+Not Found: /777.php
+Not Found: /defau1t.php
+Not Found: /xox.php
+Not Found: /new.php
+Not Found: /wi.php
+Not Found: /mar.php
+Not Found: /root.php
+Not Found: /nee.php
+Not Found: /ws.php
+Not Found: /lol.php
+Not Found: /87.php
+Not Found: /7yn.php
+Not Found: /haxor.php
+Not Found: /13.php
+Not Found: /FoxWSOv1.php
+Not Found: /alf.php
+Not Found: /bb.php
+Not Found: /lf.php
+Not Found: /WSO.php
+Not Found: /hello.php
+Not Found: /if.php
+Not Found: /kk.php
+Not Found: /mrjn.php
+Not Found: /kn.php
+Not Found: /3301.php
+Not Found: /leaf.php
+Not Found: /alex.php
+Not Found: /mailer.php
+Not Found: /anone.php
+Not Found: /wp-configer.php
+Not Found: /wp-ad.php
+Not Found: /send.php
+Not Found: /.wp-cache.php
+Not Found: /sendmail.php
+Not Found: /rahma.php
+Not Found: /nasgor.php
+Not Found: /wp-confirm.php
+Not Found: /alfa123.php
+Not Found: /upload.php
+Not Found: /bypass.php
+Not Found: /wp-one.php
+Not Found: /alexus.php
+Not Found: /wso1337.php
+Not Found: /1337.php
+Not Found: /blog.php
+Not Found: /it.php
+Not Found: /kiss.php
+Not Found: /wp2.php
+Not Found: /owl.php
+Not Found: /vuln.php
+Not Found: /ohayo.php
+Not Found: /wp-admin.php
+Not Found: /cms.php
+Not Found: /wp-uploads.php
+Not Found: /Gel.php
+Not Found: /41.php
+Not Found: /4price.php
+Not Found: /MARIJUANA.php
+Not Found: /.fk.php
+Not Found: /XxX.php
+Not Found: /alexuse.php
+Not Found: /Sendemail.php
+Not Found: /content.php
+Not Found: /leafmailer2.8.php
+Not Found: /olu.php
+Not Found: /alexusmailer%202.0.php
+Not Found: /rss.php
+Not Found: /alexus-mailer.php
+Not Found: /wp-file.php
+Not Found: /wso2.php
+Not Found: /wso1.php
+Not Found: /olux.php
+Not Found: /wp-info.php
+Not Found: /wp-confiig.php
+Not Found: /file-manager.php
+Not Found: /uploader.php
+Not Found: /leafmailer.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /kcfinder/js/helper.js
+Not Found: /panel/kcfinder/js/helper.js
+Not Found: /www/js/kcfinder/js/helper.js
+Not Found: /assets/ckeditor/kcfinder/js/helper.js
+Not Found: /app/webroot/js/kcfinder/js/helper.js
+Not Found: /modules/ictea_base/include/js/ckeditor/kcfinder/js/helper.js
+Not Found: /assets/kcfinder/js/helper.js
+Not Found: /js/kcfinder/js/helper.js
+Not Found: /ckeditor/kcfinder/js/helper.js
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /installer.php
+Not Found: /wp
+Not Found: /wordpress
+Not Found: /aplconnect
+Not Found: /WP
+Not Found: /shop
+Not Found: /.env
+Not Found: /robots.txt
+Not Found: /test_404_page/
+Not Found: /wp-content/themes/sketch/404.php
+Not Found: /wp-content/themes/twentyfive/include.php
+Not Found: /wp/wp-content/themes/sketch/404.php
+Not Found: /wordpress/wp-content/themes/sketch/404.php
+Not Found: /blog/wp-content/themes/sketch/404.php
+Not Found: /site/wp-content/themes/sketch/404.php
+Not Found: /wp-content/themes/sketch/404.php
+Not Found: /wp-content/themes/twentyfive/include.php
+Not Found: /wp/wp-content/themes/sketch/404.php
+Not Found: /wordpress/wp-content/themes/sketch/404.php
+Not Found: /blog/wp-content/themes/sketch/404.php
+Not Found: /site/wp-content/themes/sketch/404.php
+Not Found: /.env
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /mt/mt-xmlrpc.cgi
+Not Found: /cgi_bin/mt/mt-xmlrpc.cgi
+Not Found: /cgi/mt/mt-xmlrpc.cgi
+Not Found: /jp/mt/mt-xmlrpc.cgi
+Not Found: /blog/mt/mt-xmlrpc.cgi
+Not Found: /wp-content/themes/sketch/404.php
+Not Found: /wp-content/themes/twentyfive/include.php
+Not Found: /wp/wp-content/themes/sketch/404.php
+Not Found: /wordpress/wp-content/themes/sketch/404.php
+Not Found: /blog/wp-content/themes/sketch/404.php
+Not Found: /site/wp-content/themes/sketch/404.php
+Not Found: /wp-content/
+Not Found: /wp-admin
+Not Found: /wordpress
+Not Found: /wp
+Not Found: /blog
+Not Found: /new
+Not Found: /old
+Not Found: /newsite
+Not Found: /test
+Not Found: /main
+Not Found: /dev
+Not Found: /backup
+Not Found: /protal
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /wp-load.php
+Not Found: /style.php
+Not Found: /wp-admin/style.php
+Not Found: /s_e.php
+Not Found: /s_ne.php
+Not Found: /1index.php
+Not Found: /radio.php
+Not Found: /doc.php
+Not Found: /wp_wrong_datlib.php
+Not Found: /beence.php
+Not Found: /ups.php
+Not Found: /wp-signin.php
+Not Found: /media-admin.php
+Not Found: /export.php
+Not Found: /wp-content/export.php
+Not Found: /wp-includes/wp-class.php
+Not Found: /wp-includes/wp-atom.php
+Not Found: /wp-includes/images/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /defau1t.php
+Not Found: /moduless.php
+Not Found: /wp-booking.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /config.bak.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /legion.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /wp-plugins.php
+Not Found: /gank.php.PhP
+Not Found: /wp-content/db-cache.php
+Not Found: /archives.php
+Not Found: /defau11.php
+Not Found: /wp-content/outcms.php
+Not Found: /system_log.php
+Not Found: /wp-backup-sql-302.php
+Not Found: /error.php
+Not Found: /ALFA_DATA
+Not Found: /alfacgiapi
+Not Found: /cgialfa
+Not Found: /.well-known/ALFA_DATA
+Not Found: /.well-known/alfacgiapi
+Not Found: /.well-known/cgialfa
+Not Found: /wp-content/uploads/ALFA_DATA
+Not Found: /wp-content/uploads/alfacgiapi
+Not Found: /wp-content/uploads/cgialfa
+Not Found: /wp-includes/ALFA_DATA
+Not Found: /wp-includes/alfacgiapi
+Not Found: /wp-includes/cgialfa
+Not Found: /wp-admin/ALFA_DATA
+Not Found: /wp-admin/alfacgiapi
+Not Found: /wp-admin/cgialfa
+Not Found: /wp-content/ALFA_DATA
+Not Found: /wp-content/alfacgiapi
+Not Found: /wp-content/cgialfa
+Not Found: /templates/beez3/ALFA_DATA
+Not Found: /templates/beez3/alfacgiapi
+Not Found: /templates/beez3/cgialfa
+Not Found: /sites/default/files/ALFA_DATA
+Not Found: /sites/default/files/alfacgiapi
+Not Found: /sites/default/files/cgialfa
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /index.php
+Not Found: /olux.php
+Not Found: /xleet.php
+Not Found: /wso.php
+Not Found: /shell.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /1.php
+Not Found: /x.php
+Not Found: /z.php
+Not Found: /a.php
+Not Found: /test.php
+Not Found: /wp.php
+Not Found: /alfa.php
+Not Found: /config.php
+Not Found: /templates/beez3/index.php
+Not Found: /about.php
+Not Found: /shells.php
+Not Found: /wp-load.php
+Not Found: /style.php
+Not Found: /wp-admin/style.php
+Not Found: /s_e.php
+Not Found: /s_ne.php
+Not Found: /1index.php
+Not Found: /radio.php
+Not Found: /doc.php
+Not Found: /wp_wrong_datlib.php
+Not Found: /beence.php
+Not Found: /ups.php
+Not Found: /wp-signin.php
+Not Found: /media-admin.php
+Not Found: /export.php
+Not Found: /wp-content/export.php
+Not Found: /wp-includes/wp-class.php
+Not Found: /wp-includes/wp-atom.php
+Not Found: /wp-includes/images/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /defau1t.php
+Not Found: /moduless.php
+Not Found: /wp-booking.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /config.bak.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /legion.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /wp-plugins.php
+Not Found: /gank.php.PhP
+Not Found: /wp-content/db-cache.php
+Not Found: /archives.php
+Not Found: /defau11.php
+Not Found: /wp-content/outcms.php
+Not Found: /system_log.php
+Not Found: /wp-backup-sql-302.php
+Not Found: /error.php
+Not Found: /ALFA_DATA
+Not Found: /alfacgiapi
+Not Found: /cgialfa
+Not Found: /.well-known/ALFA_DATA
+Not Found: /.well-known/alfacgiapi
+Not Found: /.well-known/cgialfa
+Not Found: /wp-content/uploads/ALFA_DATA
+Not Found: /wp-content/uploads/alfacgiapi
+Not Found: /wp-content/uploads/cgialfa
+Not Found: /wp-includes/ALFA_DATA
+Not Found: /wp-includes/alfacgiapi
+Not Found: /wp-includes/cgialfa
+Not Found: /wp-admin/ALFA_DATA
+Not Found: /wp-admin/alfacgiapi
+Not Found: /wp-admin/cgialfa
+Not Found: /wp-content/ALFA_DATA
+Not Found: /wp-content/alfacgiapi
+Not Found: /wp-content/cgialfa
+Not Found: /templates/beez3/ALFA_DATA
+Not Found: /templates/beez3/alfacgiapi
+Not Found: /templates/beez3/cgialfa
+Not Found: /sites/default/files/ALFA_DATA
+Not Found: /sites/default/files/alfacgiapi
+Not Found: /sites/default/files/cgialfa
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /index.php
+Not Found: /olux.php
+Not Found: /xleet.php
+Not Found: /wso.php
+Not Found: /shell.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /1.php
+Not Found: /x.php
+Not Found: /z.php
+Not Found: /a.php
+Not Found: /test.php
+Not Found: /wp.php
+Not Found: /alfa.php
+Not Found: /config.php
+Not Found: /templates/beez3/index.php
+Not Found: /about.php
+Not Found: /shells.php
+Not Found: /wp-includes/css/modules.php
+Not Found: /wso.php
+Not Found: /wp-content/plugins/upspy/index.php
+Not Found: /wp-content/plugins/ubh/index.php
+Not Found: /wp-content/plugins/vwcleanerplugin/bump.php
+Not Found: /wp-content/plugins/xichang/x.php
+Not Found: /wp-content/plugins/html404/index.html
+Not Found: /wp-admin/shapes.php
+Not Found: /olux.php
+Not Found: /indoxploit.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /wp-content/uploads/
+Not Found: /wp-content/uploads/2022/04/
+Not Found: /shell.php
+Not Found: /wp-admin/network/wp-footer.php
+Not Found: /wp-info.php
+Not Found: /wp-content/vuln.php
+Not Found: /upel.php
+Not Found: /wp-content/plugins/ppus/up.php
+Not Found: /098.php
+Not Found: /V5.php
+Not Found: /new_license.php
+Not Found: /wp-content/plugins/theme-configurator/mini.php
+Not Found: /wp-content/plugins/widget-logic/mini.php
+Not Found: /wso.php
+Not Found: /modules/modules/modules.php
+Not Found: /modules/mod_simplefileuploadv1.3/elements/Clean.php
+Not Found: /modules/mod_simplefileuploadv1.3/elements/udd.php
+Not Found: /libraries/joomla/css.php
+Not Found: /libraries/joomla/jmails.php
+Not Found: /libraries/joomla/jmail.php
+Not Found: /images/vuln.php
+Not Found: /tmp/vuln.php
+Not Found: /XxX.php
+Not Found: /Marvins.php
+Not Found: /rxr.php
+Not Found: /olux.php
+Not Found: /indoxploit.php
+Not Found: /error.php
+Not Found: /RxR.php
+Not Found: /components/com_b2jcontact/izoc.php
+Not Found: /V3.php
+Not Found: /V5.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /shell.php
+Not Found: /administrator/templates/bluestork/index.php
+Not Found: /administrator/templates/bluestork/error.php
+Not Found: /administrator/templates/hathor/index.php
+Not Found: /administrator/templates/hathor/error.php
+Not Found: /administrator/templates/isis/index.php
+Not Found: /administrator/templates/isis/error.php
+Not Found: /templates/beez/index.php
+Not Found: /templates/ja_purity/index.php
+Not Found: /templates/rhuk_milkyway/index.php
+Not Found: /templates/system/index.php
+Not Found: /templates/system/error.php
+Not Found: /templates/beez3/index.php
+Not Found: /templates/beez3/error.php
+Not Found: /templates/beez5/index.php
+Not Found: /templates/beez5/error.php
+Not Found: /templates/beez_20/index.php
+Not Found: /templates/beez_20/error.php
+Not Found: /templates/protostar/index.php
+Not Found: /templates/protostar/error.php
+Not Found: /templates/atomic/index.php
+Not Found: /templates/atomic/error.php
+Not Found: /olux.php
+Not Found: /indoxploit.php
+Not Found: /indoxploit.php
+Not Found: /wso.php
+Not Found: /images/
+Not Found: /uploads/
+Not Found: /img/
+Not Found: /upload/
+Not Found: /gallery/
+Not Found: /files/
+Not Found: /pdf/
+Not Found: /docs/
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /shell.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /wp-admin/install.php
+Not Found: /wp/wp-admin/install.php
+Not Found: /new/wp-admin/install.php
+Not Found: /old/wp-admin/install.php
+Not Found: /wordpress/wp-admin/install.php
+Not Found: /test/wp-admin/install.php
+Not Found: /blog/wp-admin/install.php
+Not Found: /cms/wp-admin/install.php
+Not Found: /web/wp-admin/install.php
+Not Found: /backup/wp-admin/install.php
+Not Found: /site/wp-admin/install.php
+Not Found: /oldsite/wp-admin/install.php
+Not Found: /robots.txt
+Not Found: /wp-content/
+Not Found: /.env
+Not Found: /.env
+Not Found: /_profiler/empty/search/results
+Not Found: /.env
+Not Found: /wp-content/
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: //.env
+Not Found: //vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+Not Found: /.remote
+Not Found: /.local
+Not Found: /.production
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /wp-content/plugins/dzs-zoomsounds/savepng.php
+Not Found: /ALFA_DATA/alfacgiapi/perl.alfa
+Not Found: /alfacgiapi/perl.alfa
+Not Found: /.env
+Not Found: /wp-load.php
+Not Found: /style.php
+Not Found: /wp-admin/style.php
+Not Found: /s_e.php
+Not Found: /s_ne.php
+Not Found: /1index.php
+Not Found: /radio.php
+Not Found: /doc.php
+Not Found: /wp_wrong_datlib.php
+Not Found: /beence.php
+Not Found: /ups.php
+Not Found: /wp-signin.php
+Not Found: /media-admin.php
+Not Found: /export.php
+Not Found: /wp-content/export.php
+Not Found: /wp-includes/wp-class.php
+Not Found: /wp-includes/wp-atom.php
+Not Found: /wp-includes/images/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /defau1t.php
+Not Found: /moduless.php
+Not Found: /wp-booking.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /config.bak.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /legion.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /wp-plugins.php
+Not Found: /gank.php.PhP
+Not Found: /wp-content/db-cache.php
+Not Found: /archives.php
+Not Found: /defau11.php
+Not Found: /wp-content/outcms.php
+Not Found: /system_log.php
+Not Found: /wp-backup-sql-302.php
+Not Found: /error.php
+Not Found: /ALFA_DATA
+Not Found: /alfacgiapi
+Not Found: /cgialfa
+Not Found: /.well-known/ALFA_DATA
+Not Found: /.well-known/alfacgiapi
+Not Found: /.well-known/cgialfa
+Not Found: /wp-content/uploads/ALFA_DATA
+Not Found: /wp-content/uploads/alfacgiapi
+Not Found: /wp-content/uploads/cgialfa
+Not Found: /wp-includes/ALFA_DATA
+Not Found: /wp-includes/alfacgiapi
+Not Found: /wp-includes/cgialfa
+Not Found: /wp-admin/ALFA_DATA
+Not Found: /wp-admin/alfacgiapi
+Not Found: /wp-admin/cgialfa
+Not Found: /wp-content/ALFA_DATA
+Not Found: /wp-content/alfacgiapi
+Not Found: /wp-content/cgialfa
+Not Found: /templates/beez3/ALFA_DATA
+Not Found: /templates/beez3/alfacgiapi
+Not Found: /templates/beez3/cgialfa
+Not Found: /sites/default/files/ALFA_DATA
+Not Found: /sites/default/files/alfacgiapi
+Not Found: /sites/default/files/cgialfa
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /index.php
+Not Found: /olux.php
+Not Found: /xleet.php
+Not Found: /wso.php
+Not Found: /shell.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /1.php
+Not Found: /x.php
+Not Found: /z.php
+Not Found: /a.php
+Not Found: /test.php
+Not Found: /wp.php
+Not Found: /alfa.php
+Not Found: /config.php
+Not Found: /templates/beez3/index.php
+Not Found: /about.php
+Not Found: /shells.php
+Not Found: /.env
+Not Found: /olux.php
+Not Found: /wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wp-includes/css/modules.php
+Not Found: /wso.php
+Not Found: /wp-content/plugins/upspy/index.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /wp-content/uploads/
+Not Found: /wp-content/uploads/2022/05/
+Not Found: /shell.php
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2018/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //media/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Not Found: /ALFA_DATA/alfacgiapi/perl.alfa
+Not Found: /alfacgiapi/perl.alfa
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: fork: Cannot allocate memory
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: /.env
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /.env
+Not Found: /mt/
+Not Found: /ALFA_DATA/alfacgiapi/
+Not Found: /up.php
+Not Found: /wp-content/uploads/2021/12/up.php
+Not Found: /wp-content/ALFA_DATA/alfacgiapi/
+Not Found: /doc.php
+Not Found: /shells.php
+Not Found: /about.php
+Not Found: /wp-admin/alfa.php
+Not Found: /about.php
+Not Found: /wp-includes/fw.php
+Not Found: /wp-content/fw.php
+Not Found: /wp-admin/fw.php
+Not Found: /wp-content/uploads/2021/12/fw.php
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /.env
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /.env
+Not Found: /robots.txt
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //xmlrpc.php
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2018/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //media/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Not Found: /.env
+Not Found: /wp-plain.php
+Not Found: /wnstapsz.php
+Not Found: /wp-plain.php
+Not Found: /wnstapsz.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /robots.txt
+Not Found: /test_404_page/
+Not Found: /wp-admin/setup-config.php
+Not Found: /wp-admin/install.php
+Not Found: /wordpress/wp-admin/install.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wp-plain.php
+Not Found: /unempdvb.php
+Not Found: /wp-plain.php
+Not Found: /unempdvb.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /installer.php
+Not Found: /wp/
+Not Found: /wordpress/
+Not Found: /old/
+Not Found: /blog/
+Not Found: /demo/
+Not Found: /backup/
+Not Found: /new/
+Not Found: /back/
+Not Found: /shop/
+Not Found: /bk/
+Not Found: /test/
+Not Found: /home/
+Not Found: /WP/
+Not Found: /phpinfo
+Not Found: /phpdebugbar
+Not Found: /_profiler/phpinfo
+Not Found: /phpinfo.php
+Not Found: /.env
+Not Found: /info.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /info.php
+Bad Request: /phpinfo.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /phpdebugbar
+Bad Request: /.env
+Bad Request: /
+Bad Request: /phpinfo
+Bad Request: /_profiler/phpinfo
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /.env
+Not Found: /wp-login.php
+Not Found: /wordpress/wp-login.php
+Not Found: /blog/wp-login.php
+Not Found: /wp/wp-login.php
+Not Found: /_profiler/phpinfo
+Not Found: /phpinfo.php
+Not Found: /phpinfo
+Not Found: /aws.yml
+Not Found: /.env
+Not Found: /.env.bak
+Not Found: /info.php
+Not Found: /laravel/.env
+Not Found: /local/.env
+Not Found: /backend/.env
+Not Found: /application/config/sms_settings.php
+Not Found: /application/config/s3.php
+Not Found: /protected/.env
+Not Found: /database/.env
+Not Found: /public/.env
+Not Found: /app/config/.env
+Not Found: /.aws/credentials
+Not Found: /config/aws.yml
+Not Found: /config.js
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Bad Request: /
+Not Found: /robots.txt
+Not Found: /test_404_page/
+Not Found: /.env
+Not Found: /ALFA_DATA/alfacgiapi/perl.alfa
+Not Found: /alfacgiapi/perl.alfa
+Not Found: /wp-plain.php
+Not Found: /fqcfpglg.php
+Not Found: /ccx/index.php
+Not Found: /xt/index.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wp-load.php
+Not Found: /style.php
+Not Found: /wp-admin/style.php
+Not Found: /s_e.php
+Not Found: /s_ne.php
+Not Found: /1index.php
+Not Found: /radio.php
+Not Found: /doc.php
+Not Found: /wp_wrong_datlib.php
+Not Found: /beence.php
+Not Found: /ups.php
+Not Found: /wp-signin.php
+Not Found: /media-admin.php
+Not Found: /export.php
+Not Found: /wp-content/export.php
+Not Found: /wp-includes/wp-class.php
+Not Found: /wp-includes/wp-atom.php
+Not Found: /wp-includes/images/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /defau1t.php
+Not Found: /moduless.php
+Not Found: /wp-booking.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /config.bak.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /legion.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /wp-plugins.php
+Not Found: /gank.php.PhP
+Not Found: /wp-content/db-cache.php
+Not Found: /archives.php
+Not Found: /defau11.php
+Not Found: /wp-content/outcms.php
+Not Found: /system_log.php
+Not Found: /wp-backup-sql-302.php
+Not Found: /error.php
+Not Found: /ALFA_DATA
+Not Found: /alfacgiapi
+Not Found: /cgialfa
+Not Found: /.well-known/ALFA_DATA
+Not Found: /.well-known/alfacgiapi
+Not Found: /.well-known/cgialfa
+Not Found: /wp-content/uploads/ALFA_DATA
+Not Found: /wp-content/uploads/alfacgiapi
+Not Found: /wp-content/uploads/cgialfa
+Not Found: /wp-includes/ALFA_DATA
+Not Found: /wp-includes/alfacgiapi
+Not Found: /wp-includes/cgialfa
+Not Found: /wp-admin/ALFA_DATA
+Not Found: /wp-admin/alfacgiapi
+Not Found: /wp-admin/cgialfa
+Not Found: /wp-content/ALFA_DATA
+Not Found: /wp-content/alfacgiapi
+Not Found: /wp-content/cgialfa
+Not Found: /templates/beez3/ALFA_DATA
+Not Found: /templates/beez3/alfacgiapi
+Not Found: /templates/beez3/cgialfa
+Not Found: /sites/default/files/ALFA_DATA
+Not Found: /sites/default/files/alfacgiapi
+Not Found: /sites/default/files/cgialfa
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /index.php
+Not Found: /olux.php
+Not Found: /xleet.php
+Not Found: /wso.php
+Not Found: /shell.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /1.php
+Not Found: /x.php
+Not Found: /z.php
+Not Found: /a.php
+Not Found: /test.php
+Not Found: /wp.php
+Not Found: /alfa.php
+Not Found: /config.php
+Not Found: /templates/beez3/index.php
+Not Found: /about.php
+Not Found: /shells.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+Not Found: /.env
+Not Found: /wp-admin/css/
+Not Found: /.well-known/
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /.env
+OSError: LSAPI: Socket read/write error
+Not Found: /robots.txt
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /_profiler/empty/search/results
+Not Found: /_profiler/empty/search/results
+Not Found: /.env
+Not Found: //.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /_ignition/execute-solution
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /dup-installer/main.installer.php
+Not Found: /wp-load.php
+Not Found: /style.php
+Not Found: /wp-admin/style.php
+Not Found: /s_e.php
+Not Found: /s_ne.php
+Not Found: /1index.php
+Not Found: /radio.php
+Not Found: /doc.php
+Not Found: /wp_wrong_datlib.php
+Not Found: /beence.php
+Not Found: /ups.php
+Not Found: /wp-signin.php
+Not Found: /media-admin.php
+Not Found: /export.php
+Not Found: /wp-content/export.php
+Not Found: /wp-includes/wp-class.php
+Not Found: /wp-includes/wp-atom.php
+Not Found: /wp-includes/images/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /defau1t.php
+Not Found: /moduless.php
+Not Found: /wp-booking.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /config.bak.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /legion.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /wp-plugins.php
+Not Found: /gank.php.PhP
+Not Found: /wp-content/db-cache.php
+Not Found: /archives.php
+Not Found: /defau11.php
+Not Found: /wp-content/outcms.php
+Not Found: /system_log.php
+Not Found: /wp-backup-sql-302.php
+Not Found: /error.php
+Not Found: /ALFA_DATA
+Not Found: /alfacgiapi
+Not Found: /cgialfa
+Not Found: /.well-known/ALFA_DATA
+Not Found: /.well-known/alfacgiapi
+Not Found: /.well-known/cgialfa
+Not Found: /wp-content/uploads/ALFA_DATA
+Not Found: /wp-content/uploads/alfacgiapi
+Not Found: /wp-content/uploads/cgialfa
+Not Found: /wp-includes/ALFA_DATA
+Not Found: /wp-includes/alfacgiapi
+Not Found: /wp-includes/cgialfa
+Not Found: /wp-admin/ALFA_DATA
+Not Found: /wp-admin/alfacgiapi
+Not Found: /wp-admin/cgialfa
+Not Found: /wp-content/ALFA_DATA
+Not Found: /wp-content/alfacgiapi
+Not Found: /wp-content/cgialfa
+Not Found: /templates/beez3/ALFA_DATA
+Not Found: /templates/beez3/alfacgiapi
+Not Found: /templates/beez3/cgialfa
+Not Found: /sites/default/files/ALFA_DATA
+Not Found: /sites/default/files/alfacgiapi
+Not Found: /sites/default/files/cgialfa
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /index.php
+Not Found: /olux.php
+Not Found: /xleet.php
+Not Found: /wso.php
+Not Found: /shell.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /1.php
+Not Found: /x.php
+Not Found: /z.php
+Not Found: /a.php
+Not Found: /test.php
+Not Found: /wp.php
+Not Found: /alfa.php
+Not Found: /config.php
+Not Found: /templates/beez3/index.php
+Not Found: /about.php
+Not Found: /shells.php
+Not Found: /_ignition/execute-solution
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //xmlrpc.php
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2020/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Not Found: //.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: //.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2020/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Not Found: /wp-content/plugins/ninja-forms/readme.txt
+Not Found: /wp-load.php
+Not Found: /style.php
+Not Found: /wp-admin/style.php
+Not Found: /s_e.php
+Not Found: /1index.php
+Not Found: /radio.php
+Not Found: /doc.php
+Not Found: /wp_wrong_datlib.php
+Not Found: /beence.php
+Not Found: /ups.php
+Not Found: /wp-signin.php
+Not Found: /media-admin.php
+Not Found: /export.php
+Not Found: /wp-content/export.php
+Not Found: /wp-includes/wp-class.php
+Not Found: /wp-includes/wp-atom.php
+Not Found: /wp-includes/images/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /defau1t.php
+Not Found: /moduless.php
+Not Found: /wp-booking.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /config.bak.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /legion.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /wp-plugins.php
+Not Found: /gank.php.PhP
+Not Found: /wp-content/db-cache.php
+Not Found: /archives.php
+Not Found: /defau11.php
+Not Found: /wp-content/outcms.php
+Not Found: /system_log.php
+Not Found: /wp-backup-sql-302.php
+Not Found: /error.php
+Not Found: /ALFA_DATA
+Not Found: /alfacgiapi
+Not Found: /cgialfa
+Not Found: /.well-known/ALFA_DATA
+Not Found: /.well-known/alfacgiapi
+Not Found: /.well-known/cgialfa
+Not Found: /wp-content/uploads/ALFA_DATA
+Not Found: /wp-content/uploads/alfacgiapi
+Not Found: /wp-content/uploads/cgialfa
+Not Found: /wp-includes/ALFA_DATA
+Not Found: /wp-includes/alfacgiapi
+Not Found: /wp-includes/cgialfa
+Not Found: /wp-admin/ALFA_DATA
+Not Found: /wp-admin/alfacgiapi
+Not Found: /wp-admin/cgialfa
+Not Found: /wp-content/ALFA_DATA
+Not Found: /wp-content/alfacgiapi
+Not Found: /wp-content/cgialfa
+Not Found: /templates/beez3/ALFA_DATA
+Not Found: /templates/beez3/alfacgiapi
+Not Found: /templates/beez3/cgialfa
+Not Found: /sites/default/files/ALFA_DATA
+Not Found: /sites/default/files/alfacgiapi
+Not Found: /sites/default/files/cgialfa
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /index.php
+Not Found: /olux.php
+Not Found: /xleet.php
+Not Found: /wso.php
+Not Found: /shell.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /1.php
+Not Found: /x.php
+Not Found: /z.php
+Not Found: /a.php
+Not Found: /test.php
+Not Found: /wp.php
+Not Found: /alfa.php
+Not Found: /config.php
+Not Found: /templates/beez3/index.php
+Not Found: /about.php
+Not Found: /shells.php
+Not Found: /administrator/index.php
+Not Found: /.env
+Not Found: /robots.txt
+Not Found: /wp-plain.php
+Not Found: /cA1Cb.php
+Not Found: /wp-plain.php
+Not Found: /cA1Cb.php
+Not Found: /_ignition/execute-solution
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Bad Request: /
+Not Found: /wp-plain.php
+Not Found: /xshdepsy.php
+Not Found: /wp-plain.php
+Not Found: /xshdepsy.php
+Not Found: /wp-plain.php
+Not Found: /copykvfo.php
+Not Found: /.env
+Not Found: /_ignition/execute-solution
+Not Found: /wp-admin/css/
+Not Found: /.well-known/
+Not Found: /sites/default/files/
+Not Found: /uploads/
+Not Found: /images/
+Not Found: /files/
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2020/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Traceback (most recent call last):
+  File "/home/whvteacx/aplconnect/app/views.py", line 83, in dashboard
+    usertasksview = Task.objects.filter(assigned_to=request.user)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1396, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1415, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1323, in build_filter
+    self.check_related_objects(join_info.final_field, value, join_info.opts)
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1152, in check_related_objects
+    for v in value:
+  File "/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/utils/functional.py", line 247, in inner
+    return func(self._wrapped, *args)
+TypeError: 'AnonymousUser' object is not iterable
+
+Not Found: /wp-admin/css/
+Not Found: /.well-known/
+Not Found: /sites/default/files/
+Not Found: /uploads/
+Not Found: /images/
+Not Found: /files/
+Not Found: /wp-plain.php
+Not Found: /yhyjmkjm.php
+Not Found: /_ignition/execute-solution
+Not Found: /.env
+Not Found: /.env
+Not Found: /wp-admin/css/
+Not Found: /.well-known/
+Not Found: /sites/default/files/
+Not Found: /uploads/
+Not Found: /images/
+Not Found: /files/
+Not Found: /_ignition/execute-solution
+Not Found: /favicon.ico
+Not Found: /.env
+Forbidden (Referer checking failed - no Referer.): /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /wp-plain.php
+Not Found: /wkovllbc.php
+Not Found: /:2083/
+Not Found: /.env
+Not Found: /style.php
+Not Found: /moduless.php
+Not Found: /wp-content/plugins/t_file_wp/t_file_wp.php
+Not Found: /admin.php
+Not Found: /index.php
+Not Found: /boom.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/db_cache.php
+Not Found: /wp-content/plugins/ioptimization/IOptimize.php
+Not Found: /xmlrp.php
+Not Found: /wpindex.php
+Not Found: /larva.php
+Not Found: /th3_err0r.php
+Not Found: /alfindex.php
+Not Found: /alfa.php
+Not Found: /wp-booking.php
+Not Found: /cindex.php
+Not Found: /wp-content/wp-1ogin_bak.php
+Not Found: /wp-1ogin_bak.php
+Not Found: /wp-includes/fonts/css.php
+Not Found: /old-index.php
+Not Found: /config.bak.php
+Not Found: /wp-admin/config.bak.php
+Not Found: /wp-content/config.bak.php
+Not Found: /wp-includes/config.bak.php
+Not Found: /wp-content/plugins/config.bak.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /wp-includes/wpconfig.bak.php
+Not Found: /haders.php
+Not Found: /wp-content/wp-old-index.php
+Not Found: /legion.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/lfx.php
+Not Found: /wp-includes/small.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /config.php
+Not Found: /test.php
+Not Found: /wp-content/langar.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /wp-content/plugins/fancy-product-designer/inc/custom-image-handler.php
+Not Found: /wp-content/plugins/wpdiscuz/themes/default/style-rtl.css
+Forbidden (Referer checking failed - https://bit.ly/2TOp8jp does not match any trusted origins.): /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /core/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /.env
+Not Found: /core/.env
+Not Found: /backend/.env
+Not Found: /app/.env
+Not Found: /laravel/.env
+Not Found: /laravel/core/.env
+Not Found: /beta/.env
+Not Found: /config/.env
+Not Found: /kyc/.env
+Not Found: /prod/.env
+Not Found: /api/.env
+Not Found: /_ignition/execute-solution
+Not Found: /wp-plain.php
+Not Found: /wp-plain.php
+Not Found: /zjdkoara.php
+Not Found: /blog/wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wp/wp-admin/setup-config.php
+Not Found: /wp-admin/setup-config.php
+Not Found: /news/wp-admin/setup-config.php
+Not Found: /site/wp-admin/setup-config.php
+Not Found: /test/wp-admin/setup-config.php
+Not Found: /wp-plain.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /installer.php
+Not Found: /installer.php
+Not Found: /wp-load.php
+Not Found: /style.php
+Not Found: /wp-admin/style.php
+Not Found: /s_e.php
+Not Found: /s_ne.php
+Not Found: /1index.php
+Not Found: /radio.php
+Not Found: /doc.php
+Not Found: /wp_wrong_datlib.php
+Not Found: /beence.php
+Not Found: /ups.php
+Not Found: /wp-signin.php
+Not Found: /media-admin.php
+Not Found: /export.php
+Not Found: /wp-content/export.php
+Not Found: /wp-includes/wp-class.php
+Not Found: /wp-includes/wp-atom.php
+Not Found: /wp-includes/images/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /defau1t.php
+Not Found: /moduless.php
+Not Found: /wp-booking.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /config.bak.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /legion.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /wp-plugins.php
+Not Found: /gank.php.PhP
+Not Found: /wp-content/db-cache.php
+Not Found: /archives.php
+Not Found: /defau11.php
+Not Found: /wp-content/outcms.php
+Not Found: /system_log.php
+Not Found: /wp-backup-sql-302.php
+Not Found: /error.php
+Not Found: /ALFA_DATA
+Not Found: /alfacgiapi
+Not Found: /cgialfa
+Not Found: /.well-known/ALFA_DATA
+Not Found: /.well-known/alfacgiapi
+Not Found: /.well-known/cgialfa
+Not Found: /wp-content/uploads/ALFA_DATA
+Not Found: /wp-content/uploads/alfacgiapi
+Not Found: /wp-content/uploads/cgialfa
+Not Found: /wp-includes/ALFA_DATA
+Not Found: /wp-includes/alfacgiapi
+Not Found: /wp-includes/cgialfa
+Not Found: /wp-admin/ALFA_DATA
+Not Found: /wp-admin/alfacgiapi
+Not Found: /wp-admin/cgialfa
+Not Found: /wp-content/ALFA_DATA
+Not Found: /wp-content/alfacgiapi
+Not Found: /wp-content/cgialfa
+Not Found: /templates/beez3/ALFA_DATA
+Not Found: /templates/beez3/alfacgiapi
+Not Found: /templates/beez3/cgialfa
+Not Found: /sites/default/files/ALFA_DATA
+Not Found: /sites/default/files/alfacgiapi
+Not Found: /sites/default/files/cgialfa
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /index.php
+Not Found: /olux.php
+Not Found: /xleet.php
+Not Found: /wso.php
+Not Found: /shell.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /1.php
+Not Found: /x.php
+Not Found: /z.php
+Not Found: /a.php
+Not Found: /test.php
+Not Found: /wp.php
+Not Found: /alfa.php
+Not Found: /config.php
+Not Found: /templates/beez3/index.php
+Not Found: /about.php
+Not Found: /shells.php
+Not Found: /.env
+Not Found: /wp-admin/css/
+Not Found: /robots.txt
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /.env
+Not Found: /wp-admin/css/
+Not Found: /.well-known/
+Not Found: /sites/default/files/
+Not Found: /uploads/
+Not Found: /images/
+Not Found: /files/
+Not Found: /installer.php
+Not Found: /blog/wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wp/wp-admin/setup-config.php
+Not Found: /wp-admin/setup-config.php
+Not Found: /news/wp-admin/setup-config.php
+Not Found: /site/wp-admin/setup-config.php
+Not Found: /test/wp-admin/setup-config.php
+Not Found: /wp-commentin.php
+Not Found: /wp/wp-commentin.php
+Not Found: /wordpress/wp-commentin.php
+Not Found: /blog/wp-commentin.php
+Not Found: /site/wp-commentin.php
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //xmlrpc.php
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2018/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //media/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Not Found: /about-us
+Not Found: /favicon.ico
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2022-09-14 20:37:26.239092) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+Not Found: /.env
+/home/whvteacx/virtualenv/aplconnect/3.8/lib/python3.8/site-packages/django/db/models/fields/__init__.py:1416: RuntimeWarning: DateTimeField TimeLog.last_logout received a naive datetime (2022-09-17 14:36:33.634726) while time zone support is active.
+  warnings.warn("DateTimeField %s received a naive datetime (%s)"
+TimeLog object (27)
+Not Found: /.env
+Not Found: /wp-content/themes/seotheme/mar.php
+Not Found: /wp-content/themes/seotheme/mar.php
+Not Found: /wp-includes/shell20211028.php
+Not Found: /wp-includes/shell20211028.php
+Not Found: /wp-content/themes/seotheme/mar.php
+Not Found: /wp-content/themes/seotheme/mar.php
+Not Found: /wp-includes/shell20211028.php
+Not Found: /wp-includes/shell20211028.php
+Not Found: /1index.php
+Not Found: /1index.php
+Not Found: /shell4.php
+Not Found: /shell4.php
+Not Found: /ru.php
+Not Found: /ru.php
+Not Found: /saudi.php
+Not Found: /saudi.php
+Not Found: /wp-content/themes/seotheme/mar.php
+Not Found: /wp-content/themes/seotheme/mar.php
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: /help.php
+Not Found: /help.php
+Not Found: /xltavrat.php
+Not Found: /xltavrat.php
+Not Found: /wp
+Not Found: /wordpress
+Not Found: /aplconnect
+Not Found: /WP
+Not Found: /shop
+Not Found: /STORE
+Not Found: /forum
+Not Found: /FORUM
+Not Found: /store
+Not Found: /SHOP
+Not Found: /WordPress
+Not Found: /WORDPRESS
+Not Found: /Aplconnect
+Not Found: /blog
+Not Found: /new
+Not Found: /old
+Not Found: /demo
+Not Found: /backup
+Not Found: /Backup
+Not Found: /BACKUP
+Not Found: /test
+Not Found: /home
+Not Found: /2020
+Not Found: /2019
+Not Found: /site
+Not Found: /2018
+Not Found: /2017
+Not Found: /2016
+Not Found: /2015
+Not Found: /2014
+Not Found: /2013
+Not Found: /2012
+Not Found: /2010
+Not Found: /2009
+Not Found: /BLOG
+Not Found: /Blog
+Not Found: /NEW
+Not Found: /New
+Not Found: /DEMO
+Not Found: /Demo
+Not Found: /admindashboard
+Not Found: /favicon.ico
+Not Found: /sigin
+Not Found: /sigin
+Not Found: /sigin
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /style.php
+Not Found: /moduless.php
+Not Found: /wp-content/plugins/t_file_wp/t_file_wp.php
+Not Found: /admin.php
+Not Found: /index.php
+Not Found: /boom.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/db_cache.php
+Not Found: /wp-content/plugins/ioptimization/IOptimize.php
+Not Found: /xmlrp.php
+Not Found: /wpindex.php
+Not Found: /larva.php
+Not Found: /th3_err0r.php
+Not Found: /alfindex.php
+Not Found: /alfa.php
+Not Found: /wp-booking.php
+Not Found: /cindex.php
+Not Found: /wp-1ogin_bak.php
+Not Found: /wp-includes/fonts/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /old-index.php
+Not Found: /config.bak.php
+Not Found: /wp-admin/config.bak.php
+Not Found: /wp-content/config.bak.php
+Not Found: /wp-includes/config.bak.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /wp-content/plugins/config.bak.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /wp-includes/wpconfig.bak.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /haders.php
+Not Found: /wp-content/wp-old-index.php
+Not Found: /legion.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/lfx.php
+Not Found: /wp-includes/small.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /config.php
+Not Found: /test.php
+Not Found: /wp-content/langar.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /wp-content/plugins/fancy-product-designer/inc/custom-image-handler.php
+Not Found: /wp-content/plugins/wpdiscuz/themes/default/style-rtl.css
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: /.env
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: /.env
+Not Found: /_ignition/execute-solution
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: /.env
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-admin/js/widgets/wp-login.php
+Not Found: /wp-includes/wp-system-cloud.php
+Not Found: /wp-includes/class-wp-page-icon.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /_profiler/phpinfo
+Not Found: /.env
+Not Found: /robots.txt
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-wordpress-license.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /wp-includes/class-index-wordpress.php
+Not Found: /xltavrat.php
+Not Found: /xltavrat.php
+Not Found: /wp-content/plugins/dzs-zoomsounds/savepng.php
+Not Found: /wp-plain.php
+Not Found: /oluxwruj.php
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: /mt/mt-xmlrpc.cgi
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /_profiler/phpinfo
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /phpinfo.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /phpinfo
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /aws.yml
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /.env.bak
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /info.php
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /.aws/credentials
+Invalid HTTP_HOST header: 'www.aplconnect.kr8tech.com'. You may need to add 'www.aplconnect.kr8tech.com' to ALLOWED_HOSTS.
+Bad Request: /config/aws.yml
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: //.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: /.env
+Not Found: /wp-commentin.php
+Not Found: /wp-commentin.php
+Not Found: /.env
+Not Found: /style.php
+Not Found: /moduless.php
+Not Found: /wp-content/plugins/t_file_wp/t_file_wp.php
+Not Found: /admin.php
+Not Found: /index.php
+Not Found: /boom.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/db_cache.php
+Not Found: /wp-content/plugins/ioptimization/IOptimize.php
+Not Found: /xmlrp.php
+Not Found: /wpindex.php
+Not Found: /larva.php
+Not Found: /th3_err0r.php
+Not Found: /alfindex.php
+Not Found: /alfa.php
+Not Found: /wp-booking.php
+Not Found: /cindex.php
+Not Found: /wp-content/wp-1ogin_bak.php
+Not Found: /wp-1ogin_bak.php
+Not Found: /wp-includes/fonts/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /old-index.php
+Not Found: /config.bak.php
+Not Found: /wp-admin/config.bak.php
+Not Found: /wp-content/config.bak.php
+Not Found: /wp-includes/config.bak.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /wp-content/plugins/config.bak.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /wp-includes/wpconfig.bak.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /haders.php
+Not Found: /wp-content/wp-old-index.php
+Not Found: /legion.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/lfx.php
+Not Found: /wp-includes/small.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /config.php
+Not Found: /test.php
+Not Found: /wp-content/langar.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /wp-content/plugins/fancy-product-designer/inc/custom-image-handler.php
+Not Found: /wp-content/plugins/wpdiscuz/themes/default/style-rtl.css
+Not Found: //.env
+Forbidden (Referer checking failed - no Referer.): /
+Not Found: //vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /wp-content/plugins/ioptimization/IOptimize.php
+Not Found: /robots.txt
+Not Found: /wp-content/themes/seotheme/mar.php
+Not Found: /wp-content/themes/seotheme/mar.php
+Not Found: /wp-includes/shell20211028.php
+Not Found: /wp-includes/shell20211028.php
+Not Found: /1index.php
+Not Found: /1index.php
+Not Found: /.env
+Not Found: /wp-load.php
+Not Found: /style.php
+Not Found: /wp-admin/style.php
+Not Found: /s_e.php
+Not Found: /s_ne.php
+Not Found: /1index.php
+Not Found: /radio.php
+Not Found: /doc.php
+Not Found: /wp_wrong_datlib.php
+Not Found: /beence.php
+Not Found: /ups.php
+Not Found: /wp-signin.php
+Not Found: /export.php
+Not Found: /wp-content/export.php
+Not Found: /wp-includes/wp-class.php
+Not Found: /wp-includes/wp-atom.php
+Not Found: /wp-includes/images/css.php
+Not Found: /wp-includes/css/css.php
+Not Found: /defau1t.php
+Not Found: /moduless.php
+Not Found: /wp-booking.php
+Not Found: /wp-content/plugins/backup_index.php
+Not Found: /wp-content/mu-plugins/db-safe-mode.php
+Not Found: /wp-includes/css/wp-config.php
+Not Found: /wp-content/themes/config.bak.php
+Not Found: /legion.php
+Not Found: /wp-content/plugins/wpconfig.bak.php
+Not Found: /wp-plugins.php
+Not Found: /gank.php.PhP
+Not Found: /wp-content/db-cache.php
+Not Found: /archives.php
+Not Found: /defau11.php
+Not Found: /wp-content/outcms.php
+Not Found: /system_log.php
+Not Found: /wp-backup-sql-302.php
+Not Found: /error.php
+Not Found: /ALFA_DATA
+Not Found: /alfacgiapi
+Not Found: /cgialfa
+Not Found: /.well-known/ALFA_DATA
+Not Found: /.well-known/alfacgiapi
+Not Found: /.well-known/cgialfa
+Not Found: /wp-content/uploads/ALFA_DATA
+Not Found: /wp-content/uploads/alfacgiapi
+Not Found: /wp-content/uploads/cgialfa
+Not Found: /wp-includes/ALFA_DATA
+Not Found: /wp-includes/alfacgiapi
+Not Found: /wp-includes/cgialfa
+Not Found: /wp-admin/ALFA_DATA
+Not Found: /wp-admin/alfacgiapi
+Not Found: /wp-admin/cgialfa
+Not Found: /wp-content/ALFA_DATA
+Not Found: /wp-content/alfacgiapi
+Not Found: /wp-content/cgialfa
+Not Found: /templates/beez3/ALFA_DATA
+Not Found: /templates/beez3/alfacgiapi
+Not Found: /templates/beez3/cgialfa
+Not Found: /sites/default/files/ALFA_DATA
+Not Found: /sites/default/files/alfacgiapi
+Not Found: /sites/default/files/cgialfa
+Not Found: /wp-content/plugins/ubh/up.php
+Not Found: /index.php
+Not Found: /olux.php
+Not Found: /xleet.php
+Not Found: /wso.php
+Not Found: /shell.php
+Not Found: /up.php
+Not Found: /upload.php
+Not Found: /1.php
+Not Found: /x.php
+Not Found: /z.php
+Not Found: /a.php
+Not Found: /test.php
+Not Found: /wp.php
+Not Found: /alfa.php
+Not Found: /config.php
+Not Found: /templates/beez3/index.php
+Not Found: /about.php
+Not Found: /shells.php
+Not Found: //wp-includes/wlwmanifest.xml
+Not Found: //xmlrpc.php
+Not Found: //blog/wp-includes/wlwmanifest.xml
+Not Found: //web/wp-includes/wlwmanifest.xml
+Not Found: //wordpress/wp-includes/wlwmanifest.xml
+Not Found: //website/wp-includes/wlwmanifest.xml
+Not Found: //wp/wp-includes/wlwmanifest.xml
+Not Found: //news/wp-includes/wlwmanifest.xml
+Not Found: //2020/wp-includes/wlwmanifest.xml
+Not Found: //2019/wp-includes/wlwmanifest.xml
+Not Found: //shop/wp-includes/wlwmanifest.xml
+Not Found: //wp1/wp-includes/wlwmanifest.xml
+Not Found: //test/wp-includes/wlwmanifest.xml
+Not Found: //wp2/wp-includes/wlwmanifest.xml
+Not Found: //site/wp-includes/wlwmanifest.xml
+Not Found: //cms/wp-includes/wlwmanifest.xml
+Not Found: //sito/wp-includes/wlwmanifest.xml
+Not Found: /wp-content/plugins/ioptimization/IOptimize.php

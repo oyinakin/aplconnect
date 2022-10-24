@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name ="viewport" content = "width = device-width, initial-scale = 1">
+        <title>Home | APL Connect Ltd</title>
+        <meta name="description" content="">
+	<link href ="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet" type ="text/css">
+        <link href ="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type ="text/css">
+        <link href ="https://fonts.googleapis.com/css?family=Fjalla One" rel="stylesheet" type ="text/css">
+        <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+        <link rel="icon" href="../static/images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+	<style>
+	.hero-section{
+		min-height:93vh;
+	}
+	.hero-slide{
+	min-width:100vw;
+	display:grid;
+	}
+	.hero-slide-1{
+
+		background-image:url(../static/images/portrait-handsome-african-black-young-business-man-working-laptop-office-desk.png);
+		background-repeat:no-repeat;
+		min-height:93vh;
+		background-size: cover
+		
+	}
+	.hero-slide-2{
+
+		background-image:url(../static/images/loft-luxury-living-room-with-bookshelf-near-dining-table.jpg);
+		background-repeat:no-repeat;
+		min-height:93vh;
+		background-size: cover
+		
+	}
+	.hero-slide-4{
+
+		background-image:url(../static/images/afro-woman-holding-bucket-with-cleaning-item.jpg);
+		background-repeat:no-repeat;
+		min-height:93vh;
+		background-size: cover
+		
+	}
+	.hero-slide-3{
+
+		background-image:url(../static/images/top-view-pattern-from-set-construction-tools-as-screwdriver-safety-glasses-safety-helmet-putty-knife-paint-roller-paint-brush-open-end-wrench-gray-background.jpg);
+		background-repeat:no-repeat;
+		min-height:93vh;
+		background-size: cover
+	
+	}
+	
+	.about-us{
+		min-height:100vh;
+		min-width:100vw;
+	}
+	.about-us-image{
+		background-image:url(../static/images/cheerful-businesspeople-reaching-agreement.jpg);
+		border-bottom-left-radius:15px;	
+		border-top-left-radius:15px;	
+		background-size: cover;
+		background-position: center;
+		margin-top: -5%;
+	}
+	.about-us .btn-blue{
+		border: 2px solid #fff;
+	}
+	.our-services{
+		background-image: url(../static/images/hexagon-mesh.png);
+		background-repeat: no-repeat;
+		background-position: top left
+		background-color:rgba(255,255,255,0.4);
+		background-blend-mode:multiply;
+		background-attachment:fixed;
+		
+	}
+	.in-house-talents{
+		background-color:#FFF;
+		background-blend-mode:multiply;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+	}
+	#section-5 img{
+	filter: drop-shadow( 0px  10px 0 #020cb2)
+    drop-shadow( 0px -10px 0 #020cb2)
+    drop-shadow( 10px  0px 0 #020cb2)
+    drop-shadow(-10px  0px 0 #020cb2);
+	
+	 -webkit-filter:
+    drop-shadow( 0px  10px 0 #020cb2)
+    drop-shadow( 0px -10px 0 #020cb2)
+    drop-shadow( 10px  0px 0 #020cb2)
+    drop-shadow(-10px  0px 0 #020cb2);
+	}
+	.card-body{
+	min-height: 50vh;
+	padding:10%;
+	}
+	.card{
+	border-radius:30px;
+	
+	}
+	.floater{
+	position:relative;
+	min-height:40vh;
+	background-color:#020cb2;
+	box-shadow: 0px 0px 3px 4px #7e8182d9;
+	z-index:3;
+	margin-top: -12%;
+	transform:translateY(0px);
+    transition:transform ease-out 0.5s;	
+	cursor:pointer;
+	}
+	.floater:hover {
+	transform:translateY(-15px);
+    transition: transform ease-in-out 0.5s;
+	}
+	
+	#section-7{
+	background-image: url(../static/images/bquote-1.png), url(../static/images/bquote-2.png);
+	background-repeat: no-repeat;
+	background-position: 98% 2%, 2% 95%;
+    background-color: #2fb4f2;
+	background-blend-mode: overlay;
+	}
+	</style>
+	
+
+</head>
+<body>
+<!-- Navigation Bar Start -->
+
+<nav id = "navbar" class="navbar navbar-expand-md px-md-5 my-0 " style >
+		<a id ="logo" href="/">
+			<img src="../static/images/apl.png"/>
+		</a>
+		<button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-expanded="false" >
+			<span class="navbar-toggler-icon ">
+				<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'>
+					<path stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/>
+				</svg>
+			</span>
+		</button>
+		<div class="collapse navbar-collapse " id="collapsibleNavbar" style="margin-top: 0vw">
+          <ul class="nav navbar-nav navbar-right ms-auto">
+			<li class="nav-item px-md-1" style=""><a class="nav-link active" href="/">Home</a></li>
+			<li class="nav-item px-md-1" style=""><a class="nav-link" href="/about-us">About Us</a></li>
+			<li class="nav-item px-md-1 dropdown">
+				<a class="nav-link dropdown-toggle" href="/services" id="navbardrop" data-bs-toggle="dropdown">Services</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="/lettings-and-renting">Lettings & Renting</a>
+					<a class="dropdown-item" href="/maintenance">Maintainance</a>
+					<a class="dropdown-item" href="/cleaning-and-janitorial">Cleaning And Janitorial</a>
+					<a class="dropdown-item" href="/facilities-management">Facilities Management</a>
+					<a class="dropdown-item" href="/marketinging">Marketing</a>
+					<a class="dropdown-item" href="/buying-and-selling">Buying And Selling</a>
+				</div>
+			</li>
+			<li class="nav-item px-md-1"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+			<li class="nav-item px-md-1"><a class="nav-link" href="/contact-us">Contact Us</a></li>
+			<li class="nav-item px-md-1"><a class="nav-link" href="/signin">Log In</a></li>
+		  </ul>
+       </div>
+	</nav>
+
+<!-- Navigation Bar End -->
+	<div id="top"></div>
+<!-- Hero Section Start -->
+<section class = "hero-section"	>
+	<div class = "owl1 owl-carousel owl-theme ">
+		<div class ="hero-slide ">
+			<div class ="hero-slide-1">
+				<div class ="col-sm-10 px-md-5">
+					<h2 data-aos="fade-left" data-aos-duration="2000" class="text-start pt-md-5 pb-md-4 mt-md-5 text-uppercase" style="font-family:'Nunito';letter-spacing:2px;color:#fff;font-size:35px;font-weight:900;">Welcome to APL Connect</h2>
+					<h2 data-aos="fade-right" data-aos-duration="2000" class=" header-title text-start  pt-md-2" style="color:#fff">We Turn Your Dreams Into Reality</h2>
+					<div data-aos="fade-up" data-aos-duration="2000" class="contact-links justify-content-start pt-md-4" style="display: flex;">
+						<a href="/services" style="color:#fff;" class="text-start">
+							<button class="btn-blue text-uppercase py-md-2 mx-md-1 px-md-5">Learn More</button>
+						</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class ="hero-slide">
+			<div class =" hero-slide-2">
+				<div class ="col-sm-10 ps-md-5">
+					<h2 data-aos="fade-left" data-aos-duration="2000" class="text-end pt-md-5 pb-md-4 mt-md-5 text-uppercase" style="font-family:'Nunito';letter-spacing:2px;color:#fff;font-size:35px;font-weight:900;">Commercial & Residential Services</h2>
+					<h2 data-aos="fade-right" data-aos-duration="2000" class=" header-title text-end  pt-md-2" style="color:#fff">Your Property, Our Priority</h2>
+					<div data-aos="fade-up" data-aos-duration="2000" class="contact-links justify-content-end pt-md-4" style="display: flex;">
+						<a href="/services" style="color:#fff;" class="text-end">
+							<button class="btn-blue text-uppercase py-md-2 mx-md-1 px-md-5">Learn More</button>
+						</a>
+					</div>
+				</div>	
+			</div>
+			
+            
+		</div>
+		<div class ="hero-slide">
+			<div class ="hero-slide-3">
+				<div class ="col-sm-10 px-md-5">
+					<h2 data-aos="fade-left" data-aos-duration="2000" class="text-start pt-md-5 pb-md-4 mt-md-5 text-uppercase" style="font-family:'Nunito';letter-spacing:2px;color:#fff;font-size:35px;font-weight:900;">Maintenance Management</h2>
+					<h2 data-aos="fade-right" data-aos-duration="2000" class=" header-title text-start  pt-md-2" style="color:#fff">The Quality You Expect, The Service You Deserve</h2>
+					<div data-aos="fade-up" data-aos-duration="2000" class="contact-links justify-content-start pt-md-4" style="display: flex;">
+						<a href="/services" style="color:#fff;" class="text-start">
+							<button class="btn-blue text-uppercase py-md-2 mx-md-1 px-md-5">Learn More</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class ="hero-slide">
+			<div class ="hero-slide-4">
+				<div class ="col-sm-10 pe-md-0">
+					<h2 data-aos="fade-left" data-aos-duration="2000" class="text-end pt-md-5 pb-md-4 mt-md-5 text-uppercase" style="font-family:'Nunito';letter-spacing:2px;color:#fff;font-size:35px;font-weight:900;">Cleaning And Janitorial Services</h2>
+					<h2 data-aos="fade-right" data-aos-duration="2000" class=" header-title text-end  pt-md-2" style="color:#fff">Our Reputation is Spotless</h2>
+					<div data-aos="fade-up" data-aos-duration="2000" class="contact-links justify-content-end pt-md-4" style="display: flex;">
+						<a href="/services" style="color:#fff;" class="text-end">
+							<button class="btn-blue text-uppercase py-md-2 mx-md-1 px-md-5">Learn More</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- Hero Section End -->
+
+<!-- About Us  Section Start-->
+<section class="slide about-us" id="section-2">
+	    <div class="container-fluid min-vh-100">
+			<div class="row py-md-5 mh-100">
+				<div class="floater col-sm-6 offset-sm-3 justify-contents-start" >
+							<h2 class="text-center mt-5"  style="font-size: 40px;font-weight: 900;color:#fff;"><span>Need Our Services?</span></h2>
+							<h2 class="text-center"  style="font-size: 25px;font-weight: 500;color:#fff;"><span>We are a click away <i class="fas fa-hand-point-down"></i></span></h2>
+							<div data-aos="fade-up"  class="contact-links justify-content-center pt-md-4" style="display: flex;">
+								<a href="/contact-us" style="color:#020cb2;" class="text-center">
+									<button class="btn-blue text-uppercase py-md-2 mx-md-1 px-md-5">Contact Us</button>
+								</a>
+							</div>
+							
+				</div>
+						<div class="col-sm-6 px-md-5">
+							<h3 data-aos="fade-up" data-aos-duration="2000" style="font-size:20px;color:#2fb4f2;font-weight: 900;letter-spacing: 2px;" class="px-md-5">ABOUT US</h3>
+							<h1 class="px-md-5" data-aos="fade-up" data-aos-duration="2000" style="font-size: 40px;font-weight: 900;color:#020cb2;"><span>We Are Your Business Partner</span></h1>
+							<p class="px-md-5" data-aos="fade-up" data-aos-duration="2000" style="color:#333;font-size: 25px;">
+								APL Connect Ltd is a South London based company that manages properties for private landlords, rent out venues to the general public, and offers some janitorial services to businesses at cost-effective and highly competitive rates.
+							</p>
+							<p class="px-md-5" data-aos="fade-up" data-aos-duration="2000" style="color:#333;font-size: 25px;">
+								We are the advisor of choice to NGOs and small and medium scale enterprises because of our holistic approach to the provision of these services.</br>
+								We aim to deliver our services with transparency and integrity.
+							</p>
+						</div>
+						<div data-aos="zoom-out" data-aos-duration="2000" class="about-us-image col-sm-6 px-md-5">
+							
+						</div>
+			</div>
+		</div>
+</section>
+<!-- About Us  Section End -->
+
+<!-- Services Section Start-->
+<section class="slide our-services" id="section-3">
+		<div class="container">
+			<div class="row">
+			    <div class="col-sm-12" data-aos="fade-up" data-aos-duration="2000">
+							<h3 data-aos="fade-up" data-aos-duration="2000" style="font-size:20px;color:#020cb2;font-weight: 900;letter-spacing: 2px;" class="text-center pt-md-5">OUR SERVICES</h3>
+				</div>
+			</div>	
+			
+			<div class="row">
+				<div class="col-sm-4 our-process-intro-margin" >
+					<div data-aos="fade-up" data-aos-duration="2000" class="col-sm-12 our-process-card-container my-md-5  ">
+					    <div class="col-sm-12 our-process-card p-md-3" style="">
+							<h2 class="pt-md-2"> 01 </h2>
+							<h3 class="pt-md-5">Lettings & Renting</h3>
+							<p>As a UK Company with full knowledge and respect of Intellectual property and data protection laws, our client's privacy is foremost in our process.</p>
+						</div>
+					</div>
+				</div>	
+				<div class="col-sm-4" style="">	
+					<div class="col-sm-12 our-process-card-container my-md-5  ">
+					    <div data-aos="fade-up" data-aos-duration="2000" class="col-sm-12 our-process-card p-md-3" style="">
+							<h2 class="pt-md-2"> 02 </h2>
+							<h3 class="pt-md-5">Maintainance</h3>
+							<p>As a UK Company with full knowledge and respect of Intellectual property and data protection laws, our client's privacy is foremost in our process.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4" style="">	
+					<div class="col-sm-12 our-process-card-container my-md-5  ">
+					    <div data-aos="fade-up" data-aos-duration="2000" class="col-sm-12 our-process-card p-md-3" style="">
+							<h2 class="pt-md-2"> 03 </h2>
+							<h3 class="pt-md-5">Marketing</h3>
+							<p>As a UK Company with full knowledge and respect of Intellectual property and data protection laws, our client's privacy is foremost in our process.</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="row">	
+				<div class="col-sm-4" style="">
+					<div data-aos="fade-up" data-aos-duration="2000" class="col-sm-12 our-process-card-container my-md-5  ">
+					    <div class="col-sm-12 our-process-card p-md-3" style="">
+							<h2 class="pt-md-2"> 04 </h2>
+							<h3 class="pt-md-5">Cleaning & Janitorial</h3>
+							<p>As an American Company with full knowledge and respect of Intellectual property and data protection laws, our client's privacy is foremost in our process.</p>
+						</div>
+					</div>
+				</div>	
+				<div class="col-sm-4" style="">
+					<div data-aos="fade-up" data-aos-duration="2000" class="col-sm-12 our-process-card-container my-md-5  ">
+					    <div class="col-sm-12 our-process-card p-md-3" style="">
+							<h2 class="pt-md-2"> 05 </h2>
+							<h3 class="pt-md-5">Facilities Management</h3>
+							<p>As an American Company with full knowledge and respect of Intellectual property and data protection laws, our client's privacy is foremost in our process.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4" style="">	
+					<div class="col-sm-12 our-process-card-container my-md-5  ">
+					    <div data-aos="fade-up" data-aos-duration="2000" class="col-sm-12 our-process-card p-md-3" style="">
+							<h2 class="pt-md-2"> 06 </h2>
+							<h3 class="pt-md-5">Buying & Selling</h3>
+							<p>As an American Company with full knowledge and respect of Intellectual property and data protection laws, our client's privacy is foremost in our process.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- Services Section Start-->	
+
+<!-- 	
+<section class="slide in-house-talents pb-md-5" id="section-5">
+	    <div class="container-fluid min-vh-100">
+					<div class="row py-md-5 mh-100 ">
+						<div class="col-sm-5">
+							<img src="images/team-members-black.png">
+						</div>
+						<div class="col-sm-6 py-md-5 px-md-4 m-md-5">
+							<h3 class="py-md-4" data-aos="fade-up" data-aos-duration="2000" style="font-size: 40px;font-weight: 800;color:#020cb2;">Get access to our pool of in-house talent from anywhere in the world.</h3>
+							<p data-aos="fade-up" data-aos-duration="2000" style="font-size: 25px;color:#020cb2;" class="aos-init aos-animate">Our pool of in-house talent provide a one-stop-shop for agencies and brands who require reliable, cost-effective, and scalable solutions across a range of web development and digital marketing specializations.</p>
+							<a data-aos="fade-up" data-aos-duration="2000" href="/contact-us" style="color:#020cb2;" class="text-center"><button class="btn-blue text-uppercase mt-md-4 py-md-2 mx-md-1 px-md-4">Get Started</button></a>
+						</div>
+					</div>
+				</div>
+</section>
+-->
+
+<section class="slide testimonials" id="section-7">
+		<div class="col-sm-12 p-md-5" data-aos="fade-up" data-aos-duration="2000">
+			<h3 class = "text-center " style="font-size:45px;color:#fff;font-weight: bolder;">Our Clients Speak</h3>
+		</div>
+		<div class="container px-md-5" data-aos="fade-up" data-aos-duration="2000">
+			<div class="owl2 owl-carousel owl-theme" id="customer-testimonials">
+				<div class="slide card">
+					 <div class="card-body">
+						<blockquote class="quotes-slider__text text-left">
+            				<span class="quote-icon">
+								<svg aria-hidden="true" focusable="false" role="presentation"  class="icon icon-quote" viewBox="0 0 41 35">
+									<path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z"                         ></path>
+								</svg>
+							</span>
+						    <div class="quote-content">
+								<h4>APL Connect continuously improves and expands its products and stays current in this quickly changing digital age</h4>
+							</div>
+							<span class="quote-icon" style ="float:right">
+								<svg aria-hidden="true" focusable="false" role="presentation" style ="transform:rotate(180deg)" class="icon icon-quote" viewBox="0 0 41 35">
+									<path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z"                         ></path>
+								</svg>
+							</span>
+						</blockquote>
+						<h6 style="text-align:right;padding-top: 10%;font-style: italic;">--John Doe</h6>
+					</div>
+				</div>
+
+				<div class="slide card">
+					 <div class="card-body">
+						<blockquote class="quotes-slider__text text-left">
+            				<span class="quote-icon">
+								<svg aria-hidden="true" focusable="false" role="presentation"  class="icon icon-quote" viewBox="0 0 41 35">
+									<path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z"                         ></path>
+								</svg>
+							</span>
+						    <div class="quote-content">
+								<h4>...responsive, professional, high quality. They've transformed my digital footprint online</h4>
+							</div>
+							<span class="quote-icon" style ="float:right">
+								<svg aria-hidden="true" focusable="false" role="presentation" style ="transform:rotate(180deg)" class="icon icon-quote" viewBox="0 0 41 35">
+									<path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z"                         ></path>
+								</svg>
+							</span>
+						</blockquote>
+                        <h6 style="text-align:right;padding-top: 10%;font-style: italic;">--John Doe</h6>
+					</div>
+				</div>
+				<div class="slide card">
+					<div class="card-body">
+						<blockquote class="quotes-slider__text text-left">
+            				<span class="quote-icon">
+								<svg aria-hidden="true" focusable="false" role="presentation"  class="icon icon-quote" viewBox="0 0 41 35">
+									<path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z"                         ></path>
+								</svg>
+							</span>
+						    <div class="quote-content">
+								<h4>We chose APL Connect because they provided the most comprehensive solution for us</h4>
+							</div>
+							<span class="quote-icon" style ="float:right">
+								<svg aria-hidden="true" focusable="false" role="presentation" style ="transform:rotate(180deg)" class="icon icon-quote" viewBox="0 0 41 35">
+									<path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z"                         ></path>
+								</svg>
+							</span>
+						</blockquote>
+						<h6 style="text-align:right;padding-top: 10%;font-style: italic;">--John Doe</h6>
+					</div>
+				</div>
+				<div class="slide card">
+					<div class="card-body">
+						<blockquote class="quotes-slider__text text-left">
+            				<span class="quote-icon">
+								<svg aria-hidden="true" focusable="false" role="presentation"  class="icon icon-quote" viewBox="0 0 41 35">
+									<path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z"                         ></path>
+								</svg>
+							</span>
+						    <div class="quote-content">
+								<h4>APL Connect has been our trusted partner for many years... we love APL Connect</h4>
+							</div>
+							<span class="quote-icon" style ="float:right">
+								<svg aria-hidden="true" focusable="false" role="presentation" style ="transform:rotate(180deg)" class="icon icon-quote" viewBox="0 0 41 35">
+									<path d="M10.208 17.711h6.124v16.332H0V21.684C0 8.184 5.444.956 16.332 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766zm24.498 0h6.124v16.332H24.498V21.684C24.498 8.184 29.942.956 40.83 0v6.125c-4.083 1.14-6.124 4.414-6.124 9.82v1.766z"                         ></path>
+								</svg>
+							</span>
+						</blockquote>
+						<h6 style="text-align:right;padding-top: 10%;font-style: italic;">--John Doe</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Footer Section -->
+	<section class ="footer" id ="footer" style="width: 100%;height:fit-content;">
+		<div class="col-md-12 justify-content-center footerbanner" style="">
+              	<div class="text-center py-3" >
+              		<h1 data-aos="fade-up" data-aos-duration="2000" class="py-md-5">Start Your Journey With Us Today</h1>
+                    <a data-aos="fade-up" data-aos-duration="2000" href="/contact-us" style="color:#fff; text-decoration:none; border:1px solid #fff;font-size:30px; font-weight:900" class="p-3">CONTACT US</a>
+				</div>
+        </div>
+		<footer id = "footbar" class = "pt-5">
+			<div class="col-sm-2 offset-sm-3 mt-md-2 pt-0">
+					<a id="logo" href="/" style="margin-left: 2%;">
+						<img src="../static/images/apl.png" style="padding: 15% 0;"/>
+					</a>
+			</div>
+			<div class="col-sm-7 bottombar mt-md-3 pt-0">
+					<div class="col-md-3 col-sm-4 mb-md-3 p-0 float-left">
+						<h5 class="mb-md-4 font-weight-bold">Company</h5>
+						<ul class="list-group">
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-2"><a href="">About Us</a></li>
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-2"><a href="/services">Our Services</a></li>
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-2"><a href="/blog">Blog</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-sm-4 mb-md-3 px-2 float-left">
+						<h5 class="mb-md-4 font-weight-bold">Contact</h5>
+						<ul class="list-group">
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-3">
+								<i class="fas fa-map-marker-alt fa-lg"></i> Unit F1, Macbean Centre, Macbean Street, SE18 6LW
+							</li>
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-3">
+								<i class="fas fa-phone-volume fa-lg"></i> 
+								02083310445
+							</li>
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-3">
+								<i class="fab fa-whatsapp fa-lg"></i> 
+								07504696893
+							</li>
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-3">
+								<i class="fas fa-envelope fa-lg"></i>
+								admin@aplconnect.co.uk
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-4 mb-md-3 p-0 float-left">
+						<h5 class="mb-md-4 font-weight-bold">Connect</h5>
+						<ul class="list-group">
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-2"><a href="https://www.linkedin.com/company/"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a></li>
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-2"><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg"></i> Instagram</a></li>
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-2"><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-fa-facebook fa-lg"></i> Facebook</a></li>
+							<li class="list-group-item bg-transparent border-0 p-0 mb-md-2"><a href="https://www.youtube.com/channel/" target="_blank"><i class="fab fa-youtube fa-lg"> </i> YouTube</a></li>
+						</ul>
+					</div>
+
+	  </div>
+	</footer>
+
+	<div class="col-md-12 justify-content-around copyrightbar py-md-3" >
+		  <div class="col-sm-4">
+		   <a class="" style= "color: #fff;" href="/">&copy; <script>document.write(new Date().getFullYear());</script> | APL Connect Ltd | All Rights Reserved</a>
+		  </div>
+		  <div class="col-sm-4" style= "display:flex">
+			 <div class="col-sm-4 offset-8 px-md-2">
+								   <a class = "social-icon" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-xs px-md-2"></i></a>
+								   <a class = "social-icon" href="https://www.instagram.com/"><i class="fab fa-instagram fa-xs px-md-2"></i></a>
+								   <a class = "social-icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-xs px-md-2"></i></a> 
+								   <a class = "social-icon" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube fa-xs px-md-2"></i></a>
+			  </div>
+		  </div>
+	</div>
+
+</section>
+
+<button onclick="topfunction()" id="myBtn" title="Go to top"> <a href="#top" ><i class="fa fa-chevron-up"></i></a></button>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.9.8/TweenMax.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="../static/js/owl.carousel.min.js"></script> 	
+      <script>
+	$(document).ready(function(){ 
+                   	
+  		$(document).scroll(function(){
+			var nav = $(".navbar");
+                        nav.toggleClass('scrolled', $(this).scrollTop() > nav.height());
+		});
+
+		var owl = $('.owl1');
+		owl.owlCarousel({
+    		autoplay:true,
+    		autoplayTimeout:10000,
+			smartSpeed:8000,
+			autoplayHoverPause:true,
+    		items:1,
+			autoWidth:true,
+	    	loop:true,
+			animateOut:'fadeOut',
+			dots:false
+        	});
+			
+		var owl2 = $('.owl2');
+		owl2.owlCarousel({
+			autoplay:true,
+			autoplayTimeout:2000,
+			autoplayHoverPause:true,
+			items:3,
+			loop:true,
+			margin:20
+        	});	
+		
+	});
+      </script>
+	<script>
+		
+  		AOS.init();
+
+		
+
+      </script>
+
+
+</body>
+</html>
